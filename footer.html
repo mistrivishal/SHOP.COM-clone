@@ -1,246 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
     <title>footer</title>
 </head>
 <style>
-    .connect{
-        height: 0px;
-      width: 100%;
-      /* border: 1px solid red; */
-      margin: auto;
-      display: grid;
-      grid-template-rows: repeat(2,1fr);
-      padding-bottom: 150px;
-      background-color: #545871;
-      color: white;
-  }
-  #connect1{
-      height: 50px;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      margin-left: 10px;
-      margin-top: 20px;
-      font: 13px sans-serif;
-  }
-  #connect2{
-      height: 50px;
-      margin-top: -10px;
-      padding-bottom: -20px;
-      margin-left: 10px;
-  }
- .con1{
-     display: grid;
-     grid-template-columns: repeat(2,1fr);
-     text-align: left;
- }
- #connect2 >div>p>a{
-    color:white;
-    font-size: 13.5px;
-   
-    font: 12.5px sans-serif;
- }
- .con1 :nth-child(1){
-     margin-top:3px;
- }
- .con1 :nth-child(2){
-     margin-left:-1px;
- }
- .con2{
-     text-align: right;
-     margin-right: 15px;
- }
- .con2 > a{
-    color: azure;
-    text-decoration: none;
- }
- #info{
-     width: 100%;
-     text-align: left;
-    
-     font-size: 13px;
-     line-height: 12px;
-     padding-top: 7px;
-     padding-bottom: 2px;
-     color: #202340;
-     background-color: whitesmoke;
- }
- #info >p {
-    margin-left: 10px;
- }
- #social > div > a > img{
-     height: 30px;
-     width: 30px;
- }
- .ancor > a{
-     color: black;
- }
- #images{
-     margin: auto;
-     width:60%;
-     margin-top: 10px;
-     display: grid;
-     grid-template-columns: repeat(8,1fr);
- }
- #images > div > img {
-     height: 80px;
-     width: 80px;
- }
- #images > div > a > img {
-     height: 80px;
-     width: 80px;
- }
- #image{
-     margin: auto;
-     display: grid;
-     width: 10%;
-     grid-template-columns: repeat(1,1fr);
-     background-color:rgba(247, 242, 242, 0.708);
- }
- #image > div > a > img {
-     margin: auto;
-     height: 100px;
-     width: 120px;
- }
- #connect2{
-     width: 100%;
-     display: grid;
-     grid-template-columns: repeat(2,1fr);
-     
- }
- #social{
-     display: grid;
-     grid-template-columns: repeat(4,1fr);
-     margin-left: 70%;
-     margin-top: 45px;
- }
+    .connect {
+        background-color: #545871;
+        color: white;
+    }
+
+    #connect1,
+    #conn,
+    #connect2,
+    #ac,
+    #images,
+    #social,
+    #connect2>div:nth-child(1) {
+        display: flex;
+
+    }
+
+    #connect1 {
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        font: 13px;
+    }
+
+    #conn {
+        gap: 40px;
+        align-items: center;
+    }
+
+    #connect2 {
+        justify-content: space-between;
+    }
+
+    #ac {
+        gap: 10px;
+        align-items: center;
+    }
+
+    #ac a,
+    #a {
+        color: white;
+    }
+
+    #info {
+        font-size: 13px;
+        line-height: 12px;
+        padding: 7px 0 2px 10px;
+        color: #202340;
+        background-color: #f0f1f7;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .ancor>a {
+        color: black;
+    }
+
+    #images {
+        width: 60%;
+        margin: auto;
+        margin-top: 10px;
+        justify-content: space-between;
+        background-color: #f0f1f7;
+    }
+
+    #images img {
+        height: 80px;
+        width: 80px;
+    }
+
+    #image {
+        margin: auto;
+        width: 10%;
+    }
+
+    #image>div>a>img {
+        height: 100px;
+        width: 120px;
+    }
+
+    #social {
+        align-items: center;
+    }
+
+    #social i {
+        width: 45px;
+        color: white;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #connect2>div:nth-child(1) {
+        justify-content: space-between;
+    }
+
+    #footer {
+        background-color: #f0f1f7;
+    }
 </style>
+
 <body>
     <!-- fotter part -->
     <!-- for all footer id={footer} -->
     <div id="footer">
-     <div class="connect">
-        <div id="connect1">
-            <div class="con1">
-                <div>
+
+
+        <div class="connect">
+
+            <div id="connect1">
+                <div id="conn">
                     <p>Get Email Deals & Earn Cashback</p>
+
+                    <div>
+                        <input id="mail" type="text" placeholder="Enter Email Address" /><button href="">Sign
+                            Up</button>
+                    </div>
+
                 </div>
-                <div>
-                    <input id="mail" type="text" placeholder="Enter Email Address"/><button href="">Sign Up</button>
-                </div>                                       
+
+
+                <a id="a" href="https://www.shop.com/?credituser=R0001007">Link to this page and tell all of your
+                    friends!</a>
+
             </div>
-            <div class="con2">
-                <a href="https://www.shop.com/?credituser=R0001007">Link to this page and tell all of your friends!</a>
-            </div>
-        </div>
-        <div id="connect2">
-            <div>
-                <p><a href="https://www.shop.com/info/about-us">About Us</a><a href="https://www.shop.com/info/help"> | Help</a><a href="https://www.shop.com/accessibility.xhtml"> | Accessibility Statement</a><a href="https://www.shop.com/info/contact-us"> | Contact Us</a><a href="https://www.shop.com/info/partner-with-us"> | Partner with Us</a><a href="https://www.shop.com/info/services"> | Services</a><a href="https://au.shop.com/?tkr=s16774"> | Country/Region ^</a><a href="http://www.facebook.com/shop.com"> | Connect ^</a><a href="https://www.shop.com/info/launch-my-site"> | Own your Own SHOP site</a></p>
-            </div>
-            <div id="social">
-                <div >
-                    <a href="mailto:?subject=A%20SHOP.COM%20customer%20thinks%20you%E2%80%99ll%20love%20this%20page%20from%20SHOP.COM!&body=I%20love%20this%20page%20on%20SHOP.COM%20and%20thought%20you%20might%20too!%20https://www.shop.com/?credituser=R0001007">
-                        <img
-                        src="data:image/jpeg;base64,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" alt=""
-                        >
-                    </a>
+
+
+            <div id="connect2">
+                <div id="ac">
+                    <a href="https://www.shop.com/info/about-us">About Us</a>
+                    <a href="https://www.shop.com/info/help">Help</a>
+                    <a href="https://www.shop.com/accessibility.xhtml"> | Accessibility Statement</a>
+                    <a href="https://www.shop.com/info/contact-us"> | Contact Us</a>
+                    <a href="https://www.shop.com/info/partner-with-us"> | Partner with Us</a>
+                    <a href="https://www.shop.com/info/services"> | Services</a>
+                    <a href="https://au.shop.com/?tkr=s16774"> | Country/Region ^</a>
+                    <a href="http://www.facebook.com/shop.com"> | Connect ^</a>
+                    <a href="https://www.shop.com/info/launch-my-site"> | Own your Own SHOP site</a>
                 </div>
-                <div>
-                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1606041479702106&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv6.0%2Fdialog%2Fshare%3Fchannel%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df21c0d91ccfdbd4%2526domain%253Dwww.shop.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.shop.com%25252Ff2eaf0bae9af46c%2526relation%253Dopener%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dfaf8edaccc38bc%2526domain%253Dwww.shop.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.shop.com%25252Ff2eaf0bae9af46c%2526relation%253Dopener%2526frame%253Df255fce8acb639%2526result%253D%252522xxRESULTTOKENxx%252522%26display%3Dpopup%26href%3Dhttps%253A%252F%252Fwww.shop.com%252F%253Fcredituser%253DR0001007%26description%3DCome%2Blook%2Bat%2Bthis%2Bawesome%2Bpage%2Bat%2BSHOP.COM.%2BMake%2Ban%2Baccount%2Bto%2Bearn%2Bcashback%2Bon%2Bpurchases%2Bnow.%26client_id%3D1606041479702106%26ret%3Dlogin%26sdk%3Djoey%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.shop.com%252F%252F%2523page&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfaf8edaccc38bc%26domain%3Dwww.shop.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.shop.com%252Ff2eaf0bae9af46c%26relation%3Dopener%26frame%3Df255fce8acb639%26result%3D%257B%2522error_code%2522%253A4201%252C%2522error_message%2522%253A%2522User%2Bcanceled%2Bthe%2BDialog%2Bflow%2522%257D%26error_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%26e2e%3D%257B%257D&display=popup&locale=en_GB">
-                        <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-uaK5MQMEY1_ds2IHnWNvKen6q96rbt2rgQ&usqp=CAU" alt=""
-                        >
-                    </a>
+
+                <div id="social">
+
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
                 </div>
-                <div>
-                    <a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fwww.shop.com&text=Come+look+at+this+awesome+page+at+SHOP.COM.+Make+an+account+to+earn+cashback+on+purchases+now.&url=https%3A%2F%2Fwww.shop.com%2F%3Fcredituser%3DR00">
-                        <img
-                        src="data:image/png;base64,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" alt=""
-                        >
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.shop.com%2F%3Fcredituser%3DR0001007&description=Come+look+at+this+awesome+page+at+SHOP.COM.+Make+an+account+to+earn+cashback+on+purchases+now.&media=https://img.shop.com/Image/images/shopcom/shop-s-logo-1200x630.jpg">
-                        <img
-                        src="data:image/png;base64,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" alt=""
-                        >
-                    </a>
-                </div>
+
             </div>
         </div>
-     </div>
-     <div id="info">
-        <p> © 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
-        <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
-        <p class="ancor"><a href="https://www.shop.com/info/privacy-policy">Privacy Policy </a><a href="https://www.shop.com/info/terms-of-use">| Terms of Use </a><a href="https://www.shop.com/info/advertising-disclosure">| Advertising Disclosure </a><a href="https://www.shop.com/info/terms-of-use#return-policy">| Return Policy.</a><a href="https://www.shop.com/info/shipping-info">| Shipping Information</a></p>
-     </div>
-     <div id="images">
-         <div>
-             <img
-            src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png"
-            alt=""
-            >
+
+        <div id="info">
+            <p> © 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and
+                brands are the property of their respective owners.</p>
+            <p>Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will
+                receive increased IBV instead of cashback on qualifying purchases.</p>
+            <p class="ancor"><a href="https://www.shop.com/info/privacy-policy">Privacy Policy </a><a
+                    href="https://www.shop.com/info/terms-of-use">| Terms of Use </a><a
+                    href="https://www.shop.com/info/advertising-disclosure">| Advertising Disclosure </a><a
+                    href="https://www.shop.com/info/terms-of-use#return-policy">| Return Policy.</a><a
+                    href="https://www.shop.com/info/shipping-info">| Shipping Information</a></p>
         </div>
-         <div>
-            <img
-            src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png"
-            alt=""
-            >
-         </div>
-         <div>
-            <img
-            src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png"
-            alt=""
-            >
-         </div>
-         <div>
-            <img
-            src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png"
-            alt=""
-            >
-         </div>
-         <div>
-            <img
-            src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png"
-            alt=""
-            >
-         </div>
-         <div>
-            <img
-            src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png"
-            alt=""
-            >
-         </div>
-         <div>
-             <a href="https://www.bbb.org/local/0503/torch_award/past-torch-award-winners.html">
-            <img
-            src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png"
-            alt=""
-            >
-        </a>
-         </div>
-         <div>
+        <div id="images">
+
+            <img src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt="">
+
+            <img src="https://img.shop.com/Image/images/ir/DC360_2021_rank_11_top_500_primary_merch_category.png"
+                alt="">
+
+            <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt="">
+
+            <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt="">
+
+            <img src="https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png" alt="">
+
+            <img src="https://img.shop.com/Image/images/ir/commonwealth_2021_rank_25_top_2000_tw.png" alt="">
+
             <a href="https://www.bbb.org/local/0503/torch_award/past-torch-award-winners.html">
-                <img
-            src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png"
-            alt=""
-            >
+                <img src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
             </a>
-         </div>
-     </div>
-     <div id="image">
-         <div>
-           <a href="https://seal.digicert.com/seals/popup/?tag=mcRGO2B9&url=www.shop.com&lang=en&cbr=1651559268095">
-            <img
-            src="https://aboutssl.org/wp-content/uploads/2019/10/digicert-site-seal.svg"
-            alt=""
-            >
-           </a>
-         </div>
-     </div>
+
+
+            <a href="https://www.bbb.org/local/0503/torch_award/past-torch-award-winners.html">
+                <img src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png"
+                    alt="">
+            </a>
+
+        </div>
+
+        <div id="image">
+            <div>
+                <a
+                    href="https://seal.digicert.com/seals/popup/?tag=mcRGO2B9&url=www.shop.com&lang=en&cbr=1651559268095">
+                    <img src="https://aboutssl.org/wp-content/uploads/2019/10/digicert-site-seal.svg" alt="">
+                </a>
+            </div>
+        </div>
     </div>
+
 </body>
+
 </html>
