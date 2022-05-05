@@ -15,7 +15,7 @@ function navbar() {
             <div id="login">
                 <a href=""><i class="fa-solid fa-circle-user"></i></a>
                 <a href=""><i class="fa-solid fa-arrow-rotate-left"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../HTML pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
 
@@ -32,7 +32,7 @@ function navbar() {
                 <a href="">SHOP Local</a>
             </div>
 
-            <div><img
+            <div class-"motives"><img
                     src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg"
                     id="img1">
             </div>
