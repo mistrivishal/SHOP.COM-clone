@@ -489,6 +489,9 @@
 
 
 
+let SeeDetailsArr=JSON.parse(localStorage.getItem("SeeDetails"))  || [] 
+
+
 fetch("../data/womenClothing.json")
 .then(function(res){
     return res.json();
