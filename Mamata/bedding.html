@@ -480,6 +480,9 @@
 
 
 
+let SeeDetailsArr=JSON.parse(localStorage.getItem("SeeDetails"))  || [] 
+
+
 fetch("../data/bedding.json")
 .then(function(res){
     return res.json();
