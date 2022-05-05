@@ -1,14 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-    <h1>HOME PAGE TEMPLATE</h1>
-    <h1>HOME PAGE TEMPLATE</h1>
-    <h1>HOME PAGE TEMPLATE</h1>
+    <!-- ----------for menu button, start--------  -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="slidenav1">
+            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+            <h2>SHOP.COM</h2>
+        </div>
+
+        <h3>Categories</h3>
+
+        <a href="#">Mother's Day Gift Idea</a>
+        <a href="#">Gift Center</a>
+        <a href="#">SHOP.COM Home Warranties</a>
+        <a href="#">Onecart Exclusive Deals</a>
+        <a href="#">Clothes</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="beauty.html">Beauty</a>
+        <a href="kitchen.html">Home</a>
+        <a href="electronic.html">Electronics</a>
+        <a href="health.html">Health & Nutrition</a>
+        <a href="women.html">Jewelry</a>
+        <a href="kids.html">Kids</a>
+        <a href="#">Pet Supplies</a>
+        <a href="#">Food & Drink</a>
+        <a href="#">Sports</a>
+        <a href="#">Travel</a>
+        <a href="#">SHOP Travel</a>
+        <a href="#">All Stores</a>
+        <a href="#">Exclusive Brands</a>
+        <a href="#">All Departments</a>
+
+        <h3>Account</h3>
+
+        <a href=""><i class="fa-solid fa-truck"></i>Track Orders</a>
+        <a href=""><i class="fa-solid fa-arrow-rotate-left"></i>Record Items - updated</a>
+        <a href=""><i class="fa-solid fa-question"></i>Help</a>
+
+
+        <h3>Features</h3>
+
+        <a href=""><i class="fa-solid fa-list"></i>List Manager</a>
+        <a href=""><i class="fa-solid fa-gift"></i>Gift Registry</a>
+        <a href=""><i class="fa-brands fa-internet-explorer"></i>eGifts</a>
+        <a href=""><i class="fa-solid fa-dollar-sign"></i>Price Alerts</a>
+        <a href=""><i class="fa-solid fa-bell"></i>Shop Services</a>
+        <a href=""><i class="fa-solid fa-location-dot"></i>Shop Local</a>
+        <a href=""><i class="fa-solid fa-person"></i>Shopbuddy</a>
+        <a href=""><i class="fa-solid fa-bag-shopping"></i>Trends</a>
+        <a href=""><i class="fa-solid fa-tag"></i>Deals</a>
+        <a href=""><i class="fa-solid fa-car"></i>Carsaver</a>
+        <a href=""><i class="fa-solid fa-star"></i>Best of Web</a>
+        <a href=""><i class="fa-solid fa-stethoscope"></i>Nutri-Physical</a>
+
+    </div>
+
+    <!-- ----------for menu button, end--------  -->
+
+    <div id="head">
+        <p>Get 20% OFF with these blooming deals this Spring when you use your Mastercard® and Click to Pay. Terms
+            Apply. <a href="">Shop now!</a></p>
+    </div>
+
+    <div id="navbar">
+        <div id="up">
+            <div id="menu">
+                <span style=" font-size:2.5vw;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div id="in">
+                <div id="inputdiv">
+                    <input id="q" type="text" placeholder="Search SHOP.COM">
+                </div>
+                <div id="i"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+
+            <div id="login">
+                <a href="signin.html"><i class="fa-solid fa-circle-user"></i></a>
+
+                <a href="order.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+
+        <div id="down">
+            <div><a href="index.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
+
+            <div id="anchor">
+                <a href="">Exclusive Brands</a>
+                <a href="">Stores</a>
+                <a href="">Deals</a>
+                <a href="">SHOP Travel</a>
+                <a href="">Departments</a>
+                <a href="">ShopBuddy</a>
+                <a href="">SHOP Local</a>
+            </div>
+
+            <div><img
+                    src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg"
+                    id="img1">
+            </div>
+        </div>
+
+    </div>
+    <div id="foot">
+        <p>Your Shop Consultant is <b>SHOP.COM</b></p>
+        <p>Earn uo to <b>50%</b> <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"><b> Cashback
+            </b>on eligible
+            purchases. <b><a href="">Learn More</a></b></p>
+    </div>
+    <div id="award">
+        <p>$50,013,635 awarded in <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback!
+        </p>
+        <div><a href="">Learn More</a></div>
+    </div>
+    <div id="add"><a href=""><img
+                src="https://img.shop.com/Image/homepage/usa-97541-mothers-day-banners-hero1651528563361.jpeg"></a>
+    </div>
+    <div id="add1">
+        <div>
+            <p>Recently Viewed</p>
+            <img src="https://img.shop.com/Image/240000/243300/243380/products/1932836050.jpg?size=600x600">
+        </div>
+        <div>
+            <p>Dr. Deedra Mason's Essential 9</p><img
+                src="https://img.shop.com/Image/homepage/us_eng_essential9_sq1616511735959.jpg">
+        </div>
+        <div id="third">
+            <p>Featured One Cart Stores</p>
+            <div><img src="https://img.shop.com/Image/topbrands/nmlogos_134740.gif"></div>
+            <div><img src="https://img.shop.com/Image/topbrands/nmlogos_136706.gif"></div>
+            <div><img src="https://img.shop.com/Image/topbrands/nmlogos_138690.gif"></div>
+            <div><img src="https://img.shop.com/Image/topbrands/nmlogos_131565.gif"></div>
+        </div>
+        <div>
+            <div>
+                <p>Sign in for the best experience</p>
+                <button><a href="">Sign In</a></button>
+            </div>
+            <div><img
+                    src="https://img.shop.com/Image/homepage/usa-97541-mothers-day-banners-media-min1651075549624.jpeg">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="one">
+        <div id="oleft"><img
+                src="https://img.shop.com/Image/homepage/pure-collagen-us-eng-100016-signup-banners_600media1649175730514.jpg">
+        </div>
+        <div id="oright">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/MA_Grad_mp-16867-media-hp-may221651073808785.jpg">
+                <h4>9% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback
+                </h4>
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/us-en-qvc-summerfashion-banner-mp16888-apr221651252245180.jpeg">
+                <h6>Was 4% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback</h6>
+                <h4>Now 7% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback</h4>
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/motives-usa-can-98330-moments-preorder-banners-media1649175657598.jpg">
+                <h4>2% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback</h4>
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/shop-us-100695-maic2022-ticket-banners-media1650570969507.jpeg">
+
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/us-en-fruitbouquets-fbmom20-banner-mp16870-apr221650559518542.png">
+                <h4>3% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback</h4>
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/us-en-troyburch-springsale-banner-fillin-apr221650559747487.jpeg">
+                <h4>2% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback</h4>
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/us-en-luckybrand-50off-banner-fillin-apr221651084892826.png">
+                <h4>2% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg"> Cashback</h4>
+            </div>
+            <div>
+                <img
+                    src="https://img.shop.com/Image/homepage/us-en-5startgifts-mothersday-banner-cs100130-apr221650997407708.jpeg">
+
+            </div>
+
+        </div>
+    </div>
+    <div id="s"><img src="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg"></div>
+    <h1 id="hot">Hot New Products</h1>
+
+    <div class="main-carousel">
+        <div class="cell"><img
+                src="https://img.shop.com/Image/240000/247900/247927/products/1925345712.jpg?size=300x300">
+            <h4>Shopping Annuity® Brand Premium Flushable Wipes - 150 Count</h4>
+            <h4>$7</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+        <div class="cell"><img
+                src="https://img.shop.com/Image/290000/291400/291472/products/1926928562.jpg?size=300x300">
+            <h4>GlutaQ</h4>
+            <h4>$49.99</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+        <div class="cell"><img
+                src="https://img.shop.com/Image/290000/291400/291474/products/1926928560.jpg?size=300x300">
+            <h4>MycoAdapt</h4>
+            <h4>$49.99</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+        <div class="cell"><img
+                src="https://img.shop.com/Image/240000/247900/247927/products/1925855947.jpg?size=300x300">
+            <h4>Shopping Annuity® Brand Premium Balance Belly Tea</h4>
+            <h4>$14</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+        <div class="cell"><img
+                src="https://img.shop.com/Image/290000/291400/291473/products/1926928561.jpg?size=300x300">
+            <h4>Daily Greens</h4>
+            <h4>$46</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+        <div class="cell"><img
+                src="https://img.shop.com/Image/240000/243300/243380/products/1925345789.jpg?size=300x300">
+            <h4>Motives® Moments Pressed Pigment Palette</h4>
+            <h4>$35</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+        <div class="cell"><img
+                src="https://img.shop.com/Image/240000/243300/243380/products/1925345765.jpg?size=300x300">
+            <h4>Motives® 3-in-1 Cream Tints</h4>
+            <h4>$40</h4>
+            <p>+upto $1.60/2 $ Cashback</p>
+            <p>Free shiping with $99 order</p>
+        </div>
+
+
+    </div>
+
+    <div id="add2">
+        <div><img
+                src="https://img.shop.com/Image/homepage/ShopAnnuity-US-eng-97900-balance-tea-banner-media1645719715197.jpeg">
+            <h4>2% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/us-en-mycoadapt-banner-cs97902-mar221646762851555.jpeg">
+            <h4>2% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/us-en-glutaq-banner-cs97143-mar221646762684465.jpeg">
+            <h4>2% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/daily-green-usa-97146-banner-mar221646174610787.jpeg">
+            <h4>2% Cashback</h4>
+        </div>
+    </div>
+    <h1 id="hot">Layered Custom Capsule Collection</h1>
+    <div id="layer">
+        <div id="layer1"><img
+                src="https://img.shop.com/Image/homepage/layered-usa-eng-100693-spring-collection-banner-sq-min1651073323321.jpeg">
+        </div>
+        <div class="main-carousel">
+            <div class="cell"><img
+                    src="https://img.shop.com/Image/280000/282000/282022/products/1932866513.jpg?size=300x300">
+                <h4>Phonex 6mm Rope chain</h4>
+                <h4>$75</h4>
+                <p>+upto $1.80/2% $ Cashback</p>
+                <p>Free shiping with $99 order</p>
+            </div>
+            <div class="cell"><img
+                    src="https://img.shop.com/Image/280000/282000/282022/products/1932866535.jpg?size=300x300">
+                <h4>Strom-8mm Rope Chain</h4>
+                <h4>$78</h4>
+                <p>+upto $1.60/2% $ Cashback</p>
+                <p>Free shiping with $99 order</p>
+            </div>
+            <div class="cell"><img
+                    src="https://img.shop.com/Image/280000/282000/282022/products/1932866534.jpg?size=300x300">
+                <h4>Selena Pav luban Cube</h4>
+                <h4>$180</h4>
+                <p>+upto $1.60/2 $ Cashback</p>
+                <p>Free shiping with $99 order</p>
+            </div>
+            <div class="cell"><img
+                    src="https://img.shop.com/Image/270000/275200/275293/products/1730212451.jpg?size=300x300">
+                <h4>IRIS Double stone drop earings</h4>
+                <h4>$110</h4>
+                <p>+upto $1.60/2 $ Cashback</p>
+                <p>Free shiping with $99 order</p>
+            </div>
+            <div class="cell"><img
+                    src="https://img.shop.com/Image/280000/282000/282022/products/1932866550.jpg?size=300x300">
+                <h4>CORA Oval cuts studs</h4>
+                <h4>$70</h4>
+                <p>+upto $1.60/2 $ Cashback</p>
+                <p>Free shiping with $99 order</p>
+            </div>
+            <div class="cell"><img
+                    src="https://img.shop.com/Image/280000/282000/282022/products/1932866505.jpg?size=300x300">
+                <h4>Phonex-8mm Rope Chain Bracelate</h4>
+                <h4>$56</h4>
+                <p>+upto $1.60/2 $ Cashback</p>
+                <p>Free shiping with $99 order</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="spring">
+        <div id="spring1">
+            <h1>Spring Essentials</h1>
+        </div>
+        <div id="spring2">
+            <div>
+                <a href="women.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1920506725.jpg?size=400x400"></a>
+
+                <h4>SPRING FASHION</h4>
+            </div>
+            <div>
+                <a href="beauty.html"><img
+                        src="https://img.shop.com/Image/240000/248600/248698/products/1863177034.jpg?size=750x750"></a>
+
+                <h4>BEAUTY</h4>
+            </div>
+            <div>
+                <a href="men.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1905103847.jpg?size=400x400"></a>
+
+                <h4>MEN'S GRAPHIC TEES</h4>
+            </div>
+            <div>
+                <a href="men.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1852617295.jpg?size=400x400"></a>
+
+                <h4>MEN'S SHORTS</h4>
+            </div>
+            <div>
+                <a href="women.html"><img
+                        src="https://img.shop.com/Image/260000/266700/266794/products/1925100964.jpg?size=400x400"></a>
+
+                <h4>WOMEN'S SANDALS</h4>
+            </div>
+            <div>
+                <a href="men.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1910174562.jpg?size=400x400"></a>
+
+                <h4>MEN'S SANDALS</h4>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/250000/251800/251872/products/1624113478.jpg?size=400x400">
+                <h4>ARTIFICIAL PLANTS</h4>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/240000/243300/243390/products/559053520.jpg?size=750x750">
+                <h4>SPRING CLEANING</h4>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/240000/243400/243406/products/1792343401.jpg?size=400x400">
+                <h4>DRAWER ORGANIZERS & TRAY</h4>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/240000/243400/243406/products/1862227292.jpg?size=400x400">
+                <h4>PATIO FURNITURE</h4>
+            </div>
+            <div>
+                <a href="bed.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1902615042.jpg?size=400x400"></a>
+
+                <h4>BEDDING</h4>
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/240000/243400/243406/products/1917410008.jpg?size=400x400">
+                <h4>CANDLES</h4>
+            </div>
+
+        </div>
+    </div>
+    <div id="add3">
+        <div><img src="https://img.shop.com/Image/homepage/prime_feminene_media1650979608459.jpg">
+            <h4>2% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/isotonix_sexual_health_media_module1650311690370.jpg">
+            <h4>Upto 2% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/dna_opc3_media_module1650311757379.jpg">
+            <h4>2% Cashback</h4>
+        </div>
+    </div>
+    <div id="best">
+        <div id="best1">
+            <h1>Best of Web Prices & Instant Cashback!</h1>
+        </div>
+        <div id="best2">
+            <div class="main-carousel">
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/280000/289000/289007/products/1927455508.jpg?size=300x300">
+                    <h4>MKF Collection Bonita Tote Bag with Wallet by Mia K.</h4>
+                    <h4>$18</h4>
+                    <p>$1.40 / 6% Cashback</p>
+                    <h4>10% off with coupon – SPRINGSALE</h4>
+                    <p>Free shiping</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/280000/287800/287812/products/1931413939.jpg?size=300x300">
+                    <h4>Zulay Kitchen Cold Brew Coffee Maker with Shock-Resistant Glass Carafe, Stainless Steel Mesh
+                        Filter and Non-Slip
+                        Silicone Base - 1 Liter</h4>
+                    <h4>$39.99</h4>
+                    <p>$2.40 / 6% Cashback</p>
+                    <h4>10% off with coupon – 10MOTHER</h4>
+                    <p>Free shiping</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/280000/289000/289007/products/1918765407.jpg?size=300x300">
+                    <h4>MKF Collection Noemy M Signature Wallet/Wristlet -by Mia K.</h4>
+                    <h4>$39</h4>
+                    <p>$2.40 / 6% Cashback</p>
+                    <h4>10% off with coupon – SPRINGSALE</h4>
+                    <p>Free shiping</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/280000/287800/287812/products/1893513141.jpg?size=300x300">
+                    <h4>Zulay Double Whisk Milk Frother Handheld Mixer - High Powered Frother For Coffee With Improved
+                        Motor - Electric Whisk
+                        Drink Mixer For Cappuccino, Frappe, Matcha & More, Twin Whisk</h4>
+                    <h4>$40</h4>
+                    <p>$2.40 / 6% Cashback</p>
+                    <h4>10% off with coupon – 10MOTHER</h4>
+                    <p>Free shiping</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/280000/289000/289007/products/1921933273.jpg?size=1500x1500">
+                    <h4>MKF Collection Tulum 22. Check-in Spinner by Mia K.</h4>
+                    <h4>$39.99</h4>
+                    <p>$2.40 / 6% Cashback</p>
+                    <h4>10% off with coupon – SPRINGSALE</h4>
+                    <p>Free shiping</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/280000/288000/288080/products/1894373601.jpg?size=300x300">
+                    <h4>Booty Lift Black/Pink Capri - Wide Band Exclusive FeatherSoft Printed Women's Leggings</h4>
+                    <h4>$39.99</h4>
+                    <p>$2.40 / 6% Cashback</p>
+                    <h4>10% off with coupon – SPRINGSALE</h4>
+                    <p>Free shiping"</p>
+                </div>
+
+            </div>
+            <div id="best22"><img
+                    src="https://img.shop.com/Image/homepage/shop-usa-97717-best-of-web-600x600-img-min1643297975138.jpg">
+            </div>
+
+        </div>
+    </div>
+    <div id="feature">
+        <div id="feature1">
+            <h1>Featured Categories</h1>
+        </div>
+        <div id="feature2">
+            <div><a href="women.html"><img
+                        src="https://img.shop.com/Image/260000/266700/266794/products/1920629487.jpg?size=400x400"></a>
+
+                <h4>WOMENS' CLOTHING</h4>
+            </div>
+            <div><a href="men.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1871564145.jpg?size=400x400"></a>
+
+                <h4>MENS' CLOTHING</h4>
+            </div>
+            <div>
+                <a href="girl.html"><img
+                        src="https://img.shop.com/Image/240000/248200/248295/products/1919935435.jpg?size=400x400"></a>
+
+                <h4>GIRLS'CLOTHING</h4>
+            </div>
+            <div>
+                <a href="boy.html"><img
+                        src="https://img.shop.com/Image/270000/274900/274929/products/1907370742.jpg?size=400x400"></a>
+
+                <h4>BOYS' CLOTHING </h4>
+            </div>
+            <div>
+                <a href="accessories.html"><img
+                        src="https://img.shop.com/Image/270000/273200/273200/products/1899581989.jpg?size=400x400"></a>
+
+                <h4>ACCESSORIES</h4>
+            </div>
+            <div>
+                <a href="shoes.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1922216435.jpg?size=400x400"></a>
+
+                <h4>SHOES</h4>
+            </div>
+            <div>
+                <a href="bed.html"><img
+                        src="https://img.shop.com/Image/240000/243400/243406/products/1715279320.jpg?size=400x400"></a>
+
+                <h4>BEDDING</h4>
+            </div>
+            <div>
+                <a href="kitchen.html"><img
+                        src="https://img.shop.com/Image/240000/243500/243545/products/1910446952.jpg?size=400x400"></a>
+
+                <h4>KITCHEN & DINING</h4>
+            </div>
+            <div>
+                <a href="electronic.html"><img
+                        src="https://img.shop.com/Image/280000/281900/281909/products/1842390513.jpg?size=400x400"></a>
+
+                <h4>ELECTRONICS</h4>
+            </div>
+            <div>
+                <a href="beauty.html"><img
+                        src="https://img.shop.com/Image/240000/243300/243380/products/1436234961.jpg?size=750x750"></a>
+
+                <h4>BEAUTY</h4>
+            </div>
+            <div>
+                <a href="health.html"><img src="https://images.shop.com/pim/13009/image_j/OPC-3.JPG"></a>
+
+                <h4>HEALTH & NUTRITION</h4>
+            </div>
+            <div>
+                <a href="kids.html"><img
+                        src="https://img.shop.com/Image/250000/250100/250199/products/1787558026.jpg?size=750x750"></a>
+
+                <h4>KIDS</h4>
+            </div>
+
+        </div>
+    </div>
+    <div id="add4">
+        <div><img src="https://img.shop.com/Image/homepage/us-en-ranchandhome-banner-mp16877-apr221650643723623.jpeg">
+            <h4>8% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/us-eng-zulay-mothersday-media-hp-may221650990670249.jpeg">
+            <h4>6% Cashback</h4>
+        </div>
+        <div><img
+                src="https://img.shop.com/Image/homepage/us-en-shoplocal-mothersday-banner-cs100420-apr221651264144361.jpeg">
+            <h4>Up to 15% Cashback</h4>
+        </div>
+        <div><img src="https://img.shop.com/Image/homepage/us-en-saharacase-freeshi-banner-mar221646758300059.jpeg">
+            <h4>6% Cashback</h4>
+        </div>
+    </div>
+    <div id="stay">
+        <div id="stay1">
+            <h1>Stay Healthy with Essential 9!</h1>
+        </div>
+        <div id="stay2">
+            <div class="main-carousel">
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/210000/214100/214196/products/561800349.jpg?size=300x300">
+                    <h4>Isotonix® OPC 3</h4>
+                    <h4>$33-$79.95</h4>
+                    <p>+upto $1.60/2 $ Cashback</p>
+                    <p>Free shiping with $99 order</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/210000/214100/214199/products/561800368.jpg?size=300x300">
+                    <h4>Isotonix® Essential Omega3 fish oil</h4>
+                    <h4>$33-$79.95</h4>
+                    <p>+upto $1.60/2 $ Cashback</p>
+                    <p>Free shiping with $99 order</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/210000/214100/214196/products/1604659974.jpg?size=300x300">
+                    <h4>Isotonix® Multivitamin without Iron</h4>
+                    <h4>$33-$79.95</h4>
+                    <p>+upto $1.60/2 $ Cashback</p>
+                    <p>Free shiping with $99 order</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/210000/214100/214196/products/561800349.jpg?size=300x300">
+                    <h4>Isotonix® OPC 3</h4>
+                    <h4>$33-$79.95</h4>
+                    <p>+upto $1.60/2 $ Cashback</p>
+                    <p>Free shiping with $99 order</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/210000/214100/214196/products/561800345.jpg?size=300x300">
+                    <h4>Isotonix® vitamin D with K2</h4>
+                    <h4>$33-$79.95</h4>
+                    <p>+upto $1.60/2 $ Cashback</p>
+                    <p>Free shiping with $99 order</p>
+                </div>
+                <div class="cell"><img
+                        src="https://img.shop.com/Image/270000/275200/275293/products/1730212451.jpg?size=300x300">
+                    <h4>Probiotics-10</h4>
+                    <h4>$36</h4>
+                    <p>+upto $1.60/2 $ Cashback</p>
+                    <p>Free shiping with $99 order</p>
+                </div>
+
+            </div>
+            <div id="stay22"><img src="https://img.shop.com/Image/homepage/us_eng_essential9_sq1616511735959.jpg">
+            </div>
+
+        </div>
+    </div>
+    <div id="sell">
+        <div id="sell1">
+            <h1>Top Sellers</h1>
+        </div>
+        <div id="sell2"></div>
+    </div>
+
+    <div id="clean">
+        <div id="clean1">
+            <h1>Cleaning & Health Have Never Been More Important</h1>
+        </div>
+        <div id="clean2"></div>
+    </div>
+
+    <div id="brand">
+        <div id="brand1">
+            <h1>Our Brands</h1>
+        </div>
+        <div id="brand2">
+            <div>
+                <h3>HEALTH & NUTRITION</h3>
+                <a href="health.html">
+
+                    <img src="https://img.shop.com/Image/homepage/healthnutirtion1572880380738.jpg">
+                </a>
+
+            </div>
+            <div>
+                <h3>BEAUTY</h3>
+                <a href="beauty.html">
+                    <img src="https://img.shop.com/Image/homepage/lipstick1572880828301.jpg">
+                </a>
+
+
+
+            </div>
+            <div>
+                <h3>HOME & CLEANING</h3>
+                <a href="kitchen.html">
+                    <img src="https://img.shop.com/Image/homepage/home_ma1572880950379.jpg">
+                </a>
+
+
+
+            </div>
+            <div>
+                <h3>BABY & KIDS</h3>
+                <a href="kids.html">
+                    <img src="https://img.shop.com/Image/homepage/baby-kids1572881179463.jpg">
+                </a>
+
+
+
+            </div>
+            <div>
+                <h3>JEWELRY</h3>
+                <a href="women.html">
+                    <img src="https://img.shop.com/Image/homepage/1840336563__225x225-img__.jpg">
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="footer"></div>
 </body>
+
 </html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScroll: true
+    });
+</script>
+<script>
+    //  ----------for menu button, start-------- 
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "25vw";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+<script src="./script/index.js" type="module"></script>
