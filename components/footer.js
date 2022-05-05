@@ -1,121 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
-    <title>footer</title>
-</head>
-<style>
-    .connect {
-        background-color: #545871;
-        color: white;
-    }
-
-    #connect1,
-    #conn,
-    #connect2,
-    #ac,
-    #images,
-    #social,
-    #connect2>div:nth-child(1) {
-        display: flex;
-
-    }
-
-    #connect1 {
-        height: 50px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-        font: 13px;
-    }
-
-    #conn {
-        gap: 40px;
-        align-items: center;
-    }
-
-    #connect2 {
-        justify-content: space-between;
-    }
-
-    #ac {
-        gap: 10px;
-        align-items: center;
-    }
-
-    #ac a,
-    #a {
-        color: white;
-    }
-
-    #info {
-        font-size: 13px;
-        line-height: 12px;
-        padding: 7px 0 2px 10px;
-        color: #202340;
-        background-color: #f0f1f7;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    }
-
-    .ancor>a {
-        color: black;
-    }
-
-    #images {
-        width: 60%;
-        margin: auto;
-        margin-top: 10px;
-        justify-content: space-between;
-        background-color: #f0f1f7;
-    }
-
-    #images img {
-        height: 80px;
-        width: 80px;
-    }
-
-    #image {
-        margin: auto;
-        width: 10%;
-    }
-
-    #image>div>a>img {
-        height: 100px;
-        width: 120px;
-    }
-
-    #social {
-        align-items: center;
-    }
-
-    #social i {
-        width: 45px;
-        color: white;
-        height: 45px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #connect2>div:nth-child(1) {
-        justify-content: space-between;
-    }
-
-    #footer {
-        background-color: #f0f1f7;
-    }
-</style>
-
-<body>
-    <!-- fotter part -->
-    <!-- for all footer id={footer} -->
-    <div id="footer">
-
-
-        <div class="connect">
+function footer() {
+    return ` <div class="connect">
 
             <div id="connect1">
                 <div id="conn">
@@ -204,9 +88,7 @@
                     <img src="https://aboutssl.org/wp-content/uploads/2019/10/digicert-site-seal.svg" alt="">
                 </a>
             </div>
-        </div>
-    </div>
+        </div>`
+}
 
-</body>
-
-</html>
+export { footer }
