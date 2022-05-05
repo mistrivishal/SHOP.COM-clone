@@ -49,8 +49,9 @@ document.getElementById("footer").innerHTML = footer();
 
 const append = ()=>{
     let product = JSON.parse(localStorage.getItem("SeeDetails"));    
+    let container = document.getElementById("product");
+    container.innerHTML = null;
     product.forEach(({product_img_src,product_name,product_price,}) => {
-        let container = document.getElementById("product");
 
         container.innerHTML = `
         <div class="product-left">
@@ -68,7 +69,7 @@ const append = ()=>{
                     </div>
                     <div class="product-price">
                         <p class="price">${product_price} <span>+$1.60 / 2% <img class="cashback-icon" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""> Cashback</span></p>
-                        <p class="sezzle">or 4 interest-free payments of <span>$${+((product_price.split("$").join(""))/4).toFixed(2)} </span> with <img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg" alt=""> ⓘ</p>
+                        <p class="sezzle">or 4 interest-free payments of <span>$${+((product_price.split("$").pop())/4).toFixed(2)} </span> with <img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg" alt=""> ⓘ</p>
                     </div>
                     <div class="free-ship">
                         <p>Free shipping on orders $99 and up from Market America</p>
@@ -79,7 +80,7 @@ const append = ()=>{
                         <p>Now accepting Crypto at Checkout!</p>
                     </div>
                     <div class="product-detail">
-                        <p>Gold</p>
+                        <p>${product_name.split(" ").pop()}</p>
                         <p>Code: LNK46Y</p>
                         <a href="https://img.shop.com/Image/PDfs/US-Layered-Size-Guide-v2-web.pdf">Size Guide</a>
                     </div>
