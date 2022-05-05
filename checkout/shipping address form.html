@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/shipping address form.css">
+    <link rel="stylesheet" href="../Styles/navbar2.css">
+</head>
+<body>
+    <div id="navbar2">
+     
+    </div>
+    <div id="body">
+        <h1 id="heading_ship">Shipping Address Form</h1>
+        <p id="fiels">* Indicates required field</p>
+        <div id="form">
+            <div class="label">
+                <label>First name*<br>
+                    <input id="first_name" type="text" placeholder="First name here">
+                </label>
+            </div>
+            <div class="label">
+                <label>Last name*<br>
+                    <input id="last_name" type="text" placeholder="Last name here">
+                </label>
+            </div>
+            <div class="label">
+                <label>Address 1* <br>
+                    <input id="address" type="text" placeholder="Please enter street address here">
+                </label>
+            </div>
+            <div class="label">
+                <label>Address 2<br>
+                    <input type="text" placeholder="">
+                </label>
+            </div>
+            <div class="label">
+                <label>City*<br>
+                    <input id="city" type="text" placeholder="City here">
+                </label>
+            </div>
+            <div class="label">
+                <label>State/Province*<br>
+                   <select id="state">
+                       <option value=""></option>
+                       <option value="Maharashtra">Maharashtra</option>
+                       <option value="Madhya Pradesh">Madhya Pradesh</option>
+                       <option value="Uttar Pradesh">Uttar Pradesh</option>
+                       <option value="Telangana">Telangana</option>
+                       <option value="Gujarat">Gujarat</option>
+                       <option value="Andra Pradesh">Andra Pradesh</option>
+                       <option value="Goa">Goa</option>
+                       <option value="Karnataka">Karnataka</option>
+                       <option value="Kerala">Kerala</option>
+                   </select>
+                </label>
+            </div>
+            <div class="label">
+                <label>Zip/Postal*<br>
+                    <input id="zip" type="text" placeholder="zip code">
+                </label>
+            </div>
+
+
+        </div>
+        <!-- <div id="_box">
+            <input type="checkbox" id="checkbox1">
+            <label id="label1" for="checkbox1">This address is a PO Box</label>
+        <!-- <p>This address is a PO Box</p> -->
+        <!-- </div> --> 
+        <div id="box2">
+       
+            <input type="checkbox" id="checkbox1">   <label id="_box" for="checkbox1"> This address is a PO Box
+            <!-- <span >This address is a PO Box</span> -->
+        </label>
+        </div>
+        <div id="phone">
+            <label>Phone*<br>
+                <input type="text" placeholder="Please enter your 10 digit phone number">
+            </label>
+        </div>
+        <div id="phone123">
+            <button id="cancel">Cancel</button>
+            <button id="save">Save</button>
+        </div>
+
+    </div>
+</body>
+</html>
+<script type="module" src="../src/shipping address form.js"></script>

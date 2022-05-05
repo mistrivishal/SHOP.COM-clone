@@ -1,0 +1,28 @@
+#navbar2{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f0f1f7;
+    /* -webkit-box-shadow: 0 0 8px #202340; */
+    box-shadow: 0 0 8px #202340;
+    padding: 5px 10px;
+    height: 60px;
+}
+#shop_logo{
+    height:50px;
+    width: 200px;
+}
+#continue{
+    position: absolute;
+    right: 30px;
+    /* width: 32%; */
+    margin-top: 8px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+
+}
