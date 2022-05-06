@@ -126,3 +126,8 @@ const addTocart = () => {
 }
 
 document.getElementById("cart-btn").addEventListener("click", addTocart);
+
+
+let length = cart.length;
+console.log(length)
+localStorage.setItem("cartLength",JSON.stringify(length));

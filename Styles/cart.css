@@ -221,12 +221,19 @@ h1{
     border-bottom: 0.5px solid rgb(110, 110, 110);
     padding-bottom: 15px;
 }
-#cart-left>p{
+#product-info>p{
     font-size: 12px;
     padding: 10px;
     font-weight: 600;
     letter-spacing: 0.5px;
     background-color: #f0f1f7;
+}
+#product-info>p a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#product-info>p a:hover{
+    color: #00a8ca;
 }
 #cart-left .fa-truck{
     font-size: 20px;
