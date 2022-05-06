@@ -53,44 +53,10 @@ let create = (x)=>{
 
 
 
-let cart = JSON.parse(localStorage.getItem("myCart")) || [];
+let cart = JSON.parse(localStorage.getItem("myCart"));
 
-let cart_left = document.getElementById("product-info");
+let cart_left = get("product-info");
 
-<<<<<<< HEAD
-const append = () => {
-    cart_left.innerHTML = ""
-    cart.forEach((elem, idx) => {
-        // console.log(cart)
-        cart_left.innerHTML += `
-        <h2>Shipment from Market America</h2>
-        <p><span><i class="fa-solid fa-truck"></i> </span><span> Add $24.05 </span> in Market America products to qualify for <span>Free Shipping !</span> <span><a href="">Learn More 🛈</a></span></p>
-        <div class="cart-product">
-            <div class="cart-product-img">
-                <img src=${elem.product_img_src} alt="">
-            </div>
-            <div class="cart-product-info">
-                <h3>${elem.product_name}</h3>
-                <p class="price">${elem.product_price}</p>
-                <p> <span>+$1.60 / 2% <img class="cashback-icon" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""> Cashback</span></p>
-                <p>Item#: LRI44W6</p>
-                <p>Size: 6</p>
-                <p>Color: Silver with Clear Gem</p>
-                <label for="qty2">Quantity: </label>
-                <input type="number" name="qty2" id="qty2">
-                <a href="#" id="update">Update</a>
-            </div>
-            <div class="cart-btns">
-                <button class="save-later" id="save-later">Save for Later</button>
-                <button class="remove" id="remove">Remove</button>
-            </div>
-        </div>
-        `;
-        document.getElementById("remove").addEventListener("click", () => {
-            removeItem(elem, idx)
-        })
-    });
-=======
 cart.forEach((elem,idx) => {
         console.log(cart)
         // cart_left.innerHTML = null;
@@ -179,12 +145,13 @@ cart.forEach((elem,idx) => {
 
         cart_left.append(heading,truck,cart_product);
 });
-
+//-----Remove from cart--------->
 function removeItem(elem,idx){
-    cart.splice(idx,1)
-    localStorage.setItem("myCart",JSON.stringify(cart))
-    window.location.reload()
->>>>>>> 8e0bbb813632bbdaf91a46e6040e51e3d1fd30b8
+    cart.splice(idx,1);
+
+    localStorage.setItem("myCart",JSON.stringify(cart));
+    // localStorage.clear()
+    window.location.reload();
 }
 
 
@@ -197,45 +164,37 @@ var total = cart.reduce(function (sum, elem) {
 }, 0)
 
 // console.log(total)
-document.getElementById("total-price").innerText = `$${total}`;
+let cartP = get("cartLength");
+cartP.innerText = `${length}`;
 
-document.getElementById("total-price-right").innerText = `$${total}`;
 
-document.getElementById("int").innerText = `$${(total / 4).toFixed(2)}`;
+get("total-price").innerText = `$${total}`;
 
-// document.getElementById("qty2").value;
+get("total-price-right").innerText = `$${total}`;
 
-//-----Remove from cart--------->
+get("int").innerText = `$${(total / 4).toFixed(2)}`;
 
-<<<<<<< HEAD
-function removeItem(elem, idx) {
-    cart.splice(idx, 1)
-    localStorage.setItem("myCart", JSON.stringify(cart))
-    window.location.reload()
-}
-=======
-
->>>>>>> 8e0bbb813632bbdaf91a46e6040e51e3d1fd30b8
+// get("qty2").value;
 
 // <------Shippping Charges-------->
 
 function shippingCharge() {
-    let zip = document.getElementById("ent_zip").value;
+    let zip = get("ent_zip").value;
     if (zip.length === 6) {
-        document.getElementById("shipping").innerText = "Shipping: $0.00";
+        get("shipping").innerText = "Shipping: $0.00";
     }
     else {
-        document.getElementById("shipping").innerText = "Enter Valid Zipcode";
+        get("shipping").innerText = "Enter Valid Zipcode";
     }
 }
 
 // <------Checkout page-------->
 
-document.getElementById("estimate").addEventListener("click", shippingCharge)
+get("estimate").addEventListener("click", shippingCharge)
 
 function checkout() {
     localStorage.setItem("CartTotal", JSON.stringify([total]));
     window.location.href = ""
 }
 
-document.getElementById("checkout").addEventListener("click", checkout)
+get("checkout").addEventListener("click", checkout)

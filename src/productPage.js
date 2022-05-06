@@ -114,7 +114,7 @@ append()
 
 //store to cart----
 
-let cart = JSON.parse(localStorage.getItem("myCart")) || []
+let cart = JSON.parse(localStorage.getItem("myCart")) || [];
 
 const addTocart = () => {
     let product = JSON.parse(localStorage.getItem("SeeDetails"));
