@@ -179,3 +179,22 @@ hr{
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
+/* cart footer */
+#cart-footer p{
+    font-size: 12px;
+}
+#cart-footer a{
+    text-decoration: none;
+    color: inherit;
+}
+#cart-footer div:last-child{
+    text-align: end;
+}
+#cart-footer img{
+    width: 25%;
+}
+#cart-footer p:last-child:hover{
+    color: #00a8ca;
+    cursor: pointer;
+}
