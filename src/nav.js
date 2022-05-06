@@ -1,4 +1,4 @@
-import { navbar, sidenav } from "./navbar.js";
+import { navbar, sidenav } from "../components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar()
 document.getElementById("mySidenav").innerHTML = sidenav()
 
