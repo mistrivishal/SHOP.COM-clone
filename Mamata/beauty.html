@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #main{
+          display: flex;
+          width: 30%;
+          gap: 5px;
+       }
+
+       #sidebar{
+          border: 1px solid;
+       }
+       #container{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 20px;
+          width: 70%;
+          margin-left: 310px;
+          
+       }
+
+       #container>div{
+         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        /* padding:15px; */
+        /* height: 600px; */
+        line-height: 19px;
+        width: 370px;
+       }
+       #div1{
+           display: flex;
+           gap: 25px;
+           margin-top: -20px;
+           
+       }
+      #strick{
+        text-decoration: line-through;
+       }
+       #p4{
+         margin-top: -10px;
+         margin-left: 20px;
+       }
+
+       #div2{
+       display: flex;
+       margin-left: 20px;
+       
+      }
+       #p21{
+          /* margin-left: -55px; */
+          margin-top: -1px;
+          font-weight: bold;
+          font-size: 20px
+       }
+      
+      #price{
+         font-weight: bold;
+         font-size: 20px
+      }
+      #free{
+         color: rgb(27, 199, 226);
+         margin-left: 20px;
+      }
+      img{
+         height: 300px;
+         width: 350px;
+        
+         }
+         #div3{
+           display: flex;
+         }
+       #btn1{
+          width: 380px;
+          padding: 10px;
+          background-color: #F0F1F7;
+          /* color: white; */
+          font-size: 16px;
+          border: 1px solid rgb(205, 201, 201);
+          font-weight: bold;
+       }
+       #btn2{
+          width: 380px;
+          padding: 10px;
+          background-color: #414467;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          border: 1px solid rgb(205, 201, 201);
+       }
+       #title{
+         margin-left: 20px;
+         font-size: 17px;
+         color: #2E2C38;
+       }
+       #title:hover{
+        color: #509bc1;
+        cursor: pointer;
+       }
+       #soldBy{
+         margin-left: 20px;
+       }
+           /* -------------sidenav----------------------- */
+
+      #toplabel{
+         font-size: 20px;
+         font-weight: bold;
+         color: #55a1c5;
+         margin-bottom: -50px;
+         cursor: pointer;
+      }
+
+      span{
+         font-size: 13px;
+         color: #929194;
+      }
+
+      #topcheck{
+         margin-left: 35px;
+         margin-bottom: 15px;
+         cursor: pointer;
+      }
+
+      label{
+         font-size: 13px;
+         cursor: pointer;
+         }
+         label:hover{
+          color: #509bc1;
+         }
+      input{
+         margin-left: 20px;
+         height: 20px;
+         width: 20px;
+         cursor: pointer;
+       }
+     
+     #checkbox{
+        margin-bottom: 20px;
+        border-top: 1px solid rgb(206, 201, 201);
+        border-bottom: 1px solid rgb(226, 221, 221);
+        padding: 15px;
+        cursor: pointer;
+     }
+
+
+
+      body {
+  font-family: "Lato", sans-serif;
+
+      }
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 281px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+  border: 0.2px solid rgb(199, 196, 196);
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+ 
+  text-decoration: none;
+  font-size: 16px;
+  /* color: #818181; */
+  color: #202340;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  line-height: 15px;
+ 
+}
+
+.sidenav a{
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #509bc1;
+}
+
+
+.main {
+  margin-left: 150px; 
+  font-size: 16px; 
+  padding: 0px 10px;
+}
+
+
+
+.dropdown-container {
+  display: none;
+  
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+       
+   </style>
+</head>
+<body>
+   <div id="main">
+
+      <div class="sidenav">
+
+         <input id="topcheck" type="checkbox">
+         <label id="toplabel" for="">OneCart <span>(189,680)</span></label>
+         <!-- <label for=""><img src="https://img.shop.com/Image/resources/images/onecart-logo_icon.svg" alt=""></label> -->
+        <div id="checkbox">
+          <input type="checkbox">
+          <label for="">Virtual Try On  (22)</label><br>
+         <input type="checkbox">
+         <label for="">Sale items  (369,817)</label><br>
+         <input type="checkbox">
+         <label for="">shipping Offers</label><br>
+         <input type="checkbox">
+         <label for="">Exclusive Brands  (229)</label>
+        </div>
+
+         <button class="dropdown-btn">Category
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Perfume & Cologne  (72,136)</a>
+            <a href="#">Skin Care  (5,650)</a>
+            <a href="#">Hair Care Products  (7,775)</a>
+            <a href="#">Face Makeup  (1,440)</a>
+            <a href="#">Eye Makeup  (1,721)</a>
+            <a href="#">Bath & Shower  (6,184)</a>
+            <a href="#">Lip Products  (3,733)</a>
+            <a href="#">Beauty Gift Sets  (3,084)</a>
+            <a href="#">Sun Protection & Tanning  (578)</a>
+            <a href="#">Cosmetic Accessories  (3,093)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Perfume & Cologne Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Eau de Parfums  (40,341)</a>
+            <a href="#">Eau de Toilettes  (16,305)</a>
+            <a href="#">Perfumes  (7,291)</a>
+            <a href="#">Colognes  (4,985)</a>
+            <a href="#">Eau de Colognes  (1,434)</a>
+            <a href="#">Body Sprays  (923)</a>
+            <a href="#">Perfume Oils  (572)</a>
+            <a href="#">Perfumed Powders  (212)</a>
+            <a href="#">Bottles & Containers  (67)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Color
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Beige  (25,431)</a>
+            <a href="#">Black  (138,251)</a>
+            <a href="#">Blue  (98,057)</a>
+            <a href="#">Brown  (17,187)</a>
+            <a href="#">Gray  (26,607)</a>
+            <a href="#">Green  (33,339)</a>
+            <a href="#">Off-White  (13,804)</a>
+            <a href="#">Pink  (43,144)</a>
+            <a href="#">Purple  (20,721)</a>
+            <a href="#">Red  (27,032)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+
+          <button class="dropdown-btn">Skin Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Dry  (1,709)</a>
+            <a href="#">Oily  (480)</a>
+            <a href="#">Mature  (731)</a>
+            <a href="#">Combination  (490)</a>
+            <a href="#">Normal  (445)</a>
+            <a href="#">Sensitive  (801)</a>
+          </div>
+
+
+          <button class="dropdown-btn">Ingredient
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Lavender  (6,602)</a>
+            <a href="#">Glycerin  (1,572)</a>
+            <a href="#">Alpha Hydroxy Acids  (1,153)</a>
+            <a href="#">Vitamin E  (1,188)</a>
+            <a href="#">Shea Butter  (823)</a>
+            <a href="#">Citric Acid  (758)</a>
+            <a href="#">Green Tea  (780)</a>
+            <a href="#">Antioxidants  (684)</a>
+            <a href="#">Panthenol  (420)</a>
+            <a href="#">Coconut Oil  (403)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+
+          <button class="dropdown-btn">Benefit
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Moisturizing  (5,796)</a>
+            <a href="#">Mineral  (1,772)</a>
+            <a href="#">Long Lasting  (131)</a>
+            <a href="#">Volumizing  (2,119)</a>
+            <a href="#">Waterproof  (627)</a>
+            <a href="#">Brightening  (739)</a>
+            <a href="#">Lengthening  (11)</a>
+            <a href="#">Detoxifying  (227)</a>
+            <a href="#">Wet & Dry  (32)</a>
+            <a href="#">Fiber  (3)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+
+          <button class="dropdown-btn">Beauty Concern
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Anti-Aging  (1,290)</a>
+            <a href="#">Dryness  (976)</a>
+            <a href="#">Dullness  (317)</a>
+            <a href="#">Dark Spots  (63)</a>
+            <a href="#">Fine Lines & Wrinkles  (588)</a>
+            <a href="#">Pores  (608)</a>
+            <a href="#">Oil Control  (40)</a>
+            <a href="#">Sensitive Skin  (803)</a>
+            <a href="#">Puffiness  (64)</a>
+            <a href="#">Acne  (331)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Hair Care Product Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Shampoos  (3,956)</a>
+            <a href="#">Conditioners  (1,174)</a>
+            <a href="#">Styling Products  (1,230)</a>
+            <a href="#">Ethnic Hair Care  (39)</a>
+            <a href="#">Hair & Scalp Treatments  (514)</a>
+            <a href="#">Hair Color & Highlights  (399)</a>
+            <a href="#">Dry Shampoo  (311)</a>
+            <a href="#">Relaxers  (88)</a>
+            <a href="#">Regrowth Treatments  (40)</a>
+            <a href="#">Coloring Supplies  (13)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Finish
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Matte  (731)</a>
+            <a href="#">Satin  (509)</a>
+            <a href="#">Glossy  (2,151)</a>
+            <a href="#">Luminous  (708)</a>
+            <a href="#">Shimmer  (159)</a>
+            <a href="#">Glitter  (470)</a>
+            <a href="#">Pearl  (26)</a>
+            <a href="#">Metallic  (400)</a>
+            
+          </div>
+
+          <button class="dropdown-btn">Bath & Shower Product Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Body Soaps & Cleansers  (1,766)</a>
+            <a href="#">Deodorants & Anti-Perspirants  (1,514)</a>
+            <a href="#">Body Mists & Body Sprays  (1,518)</a>
+            <a href="#">Body Scrubs & Exfoliants  (48)</a>
+            <a href="#">Hand Soaps & Cleansers  (323)</a>
+            <a href="#">Bath Oils  (294)</a>
+            <a href="#">Salts & Soaks  (234)</a>
+            <a href="#">Bubble Baths  (220)</a>
+            <a href="#">Bath Accessories  (72)</a>
+          </div>
+
+
+
+   
+
+      </div>
+      <div id="container"></div>
+
+    </div>
+</body>
+</html>
+<script>
+
+let beauty=[
+{
+           image:"https://img.shop.com/Image/240000/248600/248698/products/1887211680.jpg?size=500x500" ,
+           title:"Lumière de Vie® Hydrate x 3 (Hyaluronic Acid Serum)",
+           soldBy:"Sold by Lumière de Vie®",
+           price:40,
+           strikedOffPrice:"$53.95",
+           Cashback:"+  $0.80 / 2% Cashback",
+           free:"Free shipping",
+        },
+        {
+           image:"https://img.shop.com/Image/240000/243300/243380/products/1932836050.jpg?size=500x500" ,
+           title:"Motives® Sculpting Concealer",
+           soldBy:"Sold by Market America",
+           price:22,
+           strikedOffPrice:"$35.00",
+           Cashback:"+   $0.26 / 2% Cashback",
+           free:"Free shipping",
+        },
+        {
+           image:"https://img.shop.com/Image/240000/243300/243380/products/1869987733.jpg?size=500x500" ,
+           title:"Motives® Liquid Lipstick",
+           soldBy:"Sold by Motives® Cosmetics",
+           price:20,
+           strikedOffPrice:"$34.78",
+           Cashback:"+ $0.48 / 3% Cashback",
+           free:"Free shipping",
+        },
+
+        {
+           image:"https://img.shop.com/Image/240000/248600/248698/products/1865413643.jpg?size=500x500" ,
+           title:"Lumière de Vie® Renewal Gelée (Astaxanthin Treatment))",
+           soldBy:"Sold by Lumière de Vie®",
+           price:65,
+           strikedOffPrice:"$69.99",
+           Cashback:"+  $1.30 / 2% Cashback",
+           free:"Free shipping",
+        },
+        {
+           image:"https://img.shop.com/Image/240000/243300/243380/products/1332818486.jpg?size=500x500" ,
+           title:"Motives® Complexion Perfection Face Primer",
+           soldBy:"StoreSold by Motives® Cosmetics",
+           price:27.95,
+           strikedOffPrice:"$42.00",
+           Cashback:"+  $0.48 / 3% Cashback",
+           free:"Free shipping",
+        },
+
+        {
+           image:"https://img.shop.com/Image/210000/214200/214202/products/1392418288.jpg?size=500x500" ,
+           title:"Fixx™ Argan Oil Intensive Hair Mask",
+           soldBy:"Sold by Fixx™",
+           price:24.95,
+           strikedOffPrice:"$45.00 ",
+           Cashback:"+  $0.50 / 2% Cashback",
+           free:"Free shipping",
+        },
+        {
+           image:"https://img.shop.com/Image/240000/243300/243380/products/536366079.jpg?size=500x500" ,
+           title:"Motives® Lip Crayon",
+           soldBy:"Sold by Motives® Cosmetics",
+           price:16.95,
+           strikedOffPrice:"$29.00",
+           Cashback:"+  $2.82 / 3% Cashback",
+           free:"Free shipping",
+        },
+       
+]
+
+
+let SeeDetailsArr=JSON.parse(localStorage.getItem("SeeDetails"))  || [] 
+
+
+beauty.map((el)=>{
+
+let div=document.createElement("div")
+
+let image=document.createElement("img")
+image.src=el.image
+
+let h2=document.createElement("p")
+h2.innerHTML=el.title
+h2.setAttribute("id","title")
+
+let p1=document.createElement("p")
+p1.innerHTML=el.soldBy
+p1.setAttribute("id","soldBy")
+
+let div1=document.createElement("div")
+div1.setAttribute("id","div1")
+
+
+let div2=document.createElement("div")
+div2.setAttribute("id","div2")
+
+
+let p2=document.createElement("p")
+p2.innerHTML=el.price
+p2.setAttribute("id","price")
+
+let p21=document.createElement("p")
+p21.innerHTML="$"
+p21.setAttribute("id","p21")
+
+
+let p3=document.createElement("p")
+p3.innerHTML=el.strikedOffPrice
+p3.setAttribute("id","strick")
+
+let p4=document.createElement("p")
+p4.innerHTML=el.Cashback
+p4.setAttribute("id","p4")
+
+let p5=document.createElement("p")
+p5.innerHTML=el.free
+p5.setAttribute("id","free")
+
+let div3=document.createElement("div")
+      div3.setAttribute("id","div3")
+
+let btn1=document.createElement("button")
+      btn1.innerHTML="See Details"
+      btn1.setAttribute("id","btn1")
+      btn1.addEventListener("click",function(){
+        SeeDetails(el)
+      });
+
+
+      let btn2=document.createElement("button")
+      btn2.innerHTML="Buying Options"
+      btn2.setAttribute("id","btn2")
+      btn2.addEventListener("click",function(){
+        SeeDetails(el)
+      });
+
+
+      div1.append(p2,p3)
+      div2.append(div1)
+      div3.append(btn1,btn2)
+      div.append(image,h2,p1,div2,p4,p5,div3)
+      document.getElementById("container").append(div)
+
+
+
+
+})
+
+
+let SeeDetails=(el)=>{
+    SeeDetailsArr.push(el)
+    localStorage.setItem("SeeDetails",JSON.stringify(SeeDetailsArr))
+    window.location.href="../HTML pages/ProductDetails.html"
+}
+
+
+// ------------------------sidenav-----------------
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
