@@ -4,9 +4,323 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessories</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Accessories</title>
+     
+    <link rel="stylesheet" href="./products.css">
+    
+        
+        <!-- /* ---------navbar start-------------- */
+        /* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/*#navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: #f0f1f7;
+            padding: 15px 0px 15px 25px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            height: 150px;
+          }
+
+        #navbar div {
+            display: flex;
+            align-items: center;
+        }
+
+        #head {
+            font-size: 1.3vw;
+            padding: 9px 0px;
+            text-align: center;
+            background-color: #202340;
+            color: white;
+        }
+
+        #head a {
+            color: white;
+        }
+
+        #up {
+            margin-bottom: 0.5vw;
+            gap: 11vw;
+
+        }
+
+        #up,
+        #down {
+            display: flex;
+
+        }
+
+
+        #down {
+            gap: 6.5vw;
+            /* margin-top: -100px; */
+        }
+
+        #navbar img {
+            width: 15vw;
+        }
+
+        #in {
+            display: flex;
+            align-items: center;
+        }
+
+        #inputdiv {
+            background-color: white;
+            border: 1px solid black;
+            padding-left: 1vw;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            width: 45vw;
+            height: 3.5vw;
+            display: flex;
+            align-items: center;
+        }
+
+        #inputdiv input {
+            width: 100%;
+            height: 2.5vw;
+            font-size: 1.3vw;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        #i i {
+            font-size: 1.7vw;
+        }
+
+        #i {
+            background-color: #202340;
+            color: white;
+            width: 4vw;
+            height: 3.63vw;
+            border: 1px solid;
+            border-bottom-right-radius: 40px;
+            border-top-right-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #menu {
+            color: #202340;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #anchor {
+            display: flex;
+            gap: 2vw;
+        }
+
+        #anchor a {
+            color: #454760;
+            text-decoration: none;
+            color: black;
+            font-size: 1.2vw;
+        }
+
+
+
+        #login {
+            display: flex;
+            gap: 5vw;
+
+        }
+
+        #login a {
+            font-size: 2vw;
+        }
+
+        #login i {
+            color: #202340;
+        }
+
+        #menu span {
+            color: #202340;
+        }
+
+        #menu span:hover,
+        #login i:hover,
+        #anchor a:hover {
+            color: #00a8ca;
+        }
+
+        /* ----------for menu button, start-------- */
+
+        .sidenav {
+            z-index: 3;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f0f1f7;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 1vw;
+        }
+
+        #slidenav1 {
+            /* border: 1px solid; */
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1vw 0;
+
+        }
+
+        #slidenav1 img {
+            width: 4.5vw;
+            height: 4.5vw;
+        }
+
+        .sidenav a {
+            /* border: 1px solid; */
+            padding: 0.5vw 0.5vw 0.5vw 3vw;
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav h3 {
+            margin: 2vw 2vw;
+        }
+
+        .sidenav i {
+            margin-right: 1.8vw;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 2vw;
+            font-size: 3vw;
+            margin-left: 5vw;
+        }
+
+
+
+
+       /* --------navbar end----------- */
+
+      /* -----------footer start----------- */
+      .connect {
+        background-color: #545871;
+        color: white;
+        margin-top: 100px;
+    }
+
+    #connect1,
+    #conn,
+    #connect2,
+    #ac,
+    #images,
+    #social,
+    #connect2>div:nth-child(1) {
+        display: flex;
+
+    }
+
+    #connect1 {
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        font: 13px;
+    }
+
+    #conn {
+        gap: 40px;
+        align-items: center;
+    }
+
+    #connect2 {
+        justify-content: space-between;
+    }
+
+    #ac {
+        gap: 10px;
+        align-items: center;
+    }
+
+    #ac a,
+    #a {
+        color: white;
+    }
+
+    #info {
+        font-size: 13px;
+        line-height: 12px;
+        padding: 7px 0 2px 10px;
+        color: #202340;
+        background-color: #f0f1f7;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .ancor>a {
+        color: black;
+    }
+
+    #images {
+        width: 60%;
+        margin: auto;
+        margin-top: 10px;
+        justify-content: space-between;
+        background-color: #f0f1f7;
+    }
+
+    #images img {
+        height: 80px;
+        width: 80px;
+    }
+
+    #image {
+        margin: auto;
+        width: 10%;
+    }
+
+    #image>div>a>img {
+        height: 100px;
+        width: 120px;
+    }
+
+    #social {
+        align-items: center;
+    }
+
+    #social i {
+        width: 45px;
+        color: white;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #connect2>div:nth-child(1) {
+        justify-content: space-between;
+    }
+
+    #footer {
+        background-color: #f0f1f7;
+    } */
+
+
+    /* ----------------  footer end------------ */
        #main{
           display: flex;
           width: 30%;
@@ -31,11 +345,12 @@
         /* height: 580px; */
         line-height: 19px;
         width: 370px;
+        
        }
        #div1{
            display: flex;
            gap: 25px;
-           margin-top: -20px;
+           /* margin-top: -20px; */
            
        }
       #strick{
@@ -69,7 +384,7 @@
       img{
          height: 300px;
          width: 350px;
-         margin-left: 20px;
+         margin-left: 10px;
          }
          #div3{
            display: flex;
@@ -159,26 +474,27 @@
       }
 
 /* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
+.sidenav3 {
+  /* height: 100%; */
   width: 281px;
-  position: fixed;
-  z-index: 1;
+  /* position: fixed; */
+  position: absolute;
+  /* z-index: 1; */
   top: 0;
   left: 0;
-  
+  margin-top: 700px;
   overflow-x: hidden;
   padding-top: 20px;
   border: 0.2px solid rgb(199, 196, 196);
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav3 a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
  
   text-decoration: none;
   font-size: 16px;
-  /* color: #818181; */
+ 
   color: #202340;
   display: block;
   border: none;
@@ -191,13 +507,13 @@
  
 }
 
-.sidenav a{
+.sidenav3 a{
   font-size: 13px;
   margin-left: 20px;
 }
 
 
-.sidenav a:hover, .dropdown-btn:hover {
+.sidenav3 a:hover, .dropdown-btn:hover {
   color: #509bc1;
 }
 
@@ -206,6 +522,10 @@
   margin-left: 150px; 
   font-size: 16px; 
   padding: 0px 10px;
+  
+}
+body{
+  margin-top: 200px;
 }
 
 
@@ -224,21 +544,58 @@
 
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav3 {padding-top: 15px;}
+  .sidenav3 a {font-size: 18px;}
 }
-       
-    </style>
    
+
+@media only screen and (min-width:421px) and (max-width:780px) {
+  #container{
+        
+          grid-template-columns: repeat(1,1fr);
+          
+       }
+       
+       .sidenav3{
+           width:250px ;
+         }
+
+       #container>div{
+           margin-left: -10px;
+         }
+        
+        
+} -->
+
+<!-- @media only screen and (min-width:80px) and (max-width:420px) {
+  #container{
+        
+          grid-template-columns: repeat(1,1fr);
+         
+         }
+
+         .sidenav3{
+           width:150px ;
+         }
+         #container>div{
+           margin-left: -170px;
+         }
+}
+    -->
 </head>
 <body>
+  
+  <div id="mySidenav" class="sidenav"> </div>
+  <!-- ---------------navbar----------------- -->
+  <div id="navbar"></div>
+  <!-- ----------middle part----------- -->
     <div id="main">
 
-      <div class="sidenav">
+      <!-- -------------sidenav----------------------- -->
+      <div class="sidenav3">
 
          <input id="topcheck" type="checkbox">
          <label id="toplabel" for="">OneCart <span>(189,680)</span></label>
-         <!-- <label for=""><img src="https://img.shop.com/Image/resources/images/onecart-logo_icon.svg" alt=""></label> -->
         <div id="checkbox">
          <input type="checkbox">
          <label for="">Sale items  (369,817)</label><br>
@@ -407,17 +764,17 @@
             
           </div>
 
+  </div>
 
-
-   
-
-      </div>
+  <!-- --------------product container----------------- -->
       <div id="container"></div>
 
     </div>
+<!-- --------footer-------------- -->
+    <div id="footer"></div>
 </body>
 </html>
-<script>
+<script type="module">
     // let accessories=[
     //     {
     //        image:"https://img.shop.com/Image/290000/290400/290461/products/1918590497.jpg?size=400x400" ,
@@ -500,6 +857,17 @@
 // .then(res=>res.json())
 // .then(data=>console.log(data))
 // append(data)
+
+
+import { navbar, sidenav } from "../components/navbar.js";
+document.getElementById("navbar").innerHTML = navbar()
+document.getElementById("mySidenav").innerHTML = sidenav()
+
+
+import {footer} from "../components/footer.js"
+document.getElementById("footer").innerHTML=footer()
+
+
 
 
 
@@ -631,7 +999,43 @@ for (i = 0; i < dropdown.length; i++) {
  
 
 
+/*-------------------navbar js-----------------------*/
+
+
  
+document.getElementById("open").addEventListener("click", openNav)
+document.getElementById("close").addEventListener("click", closeNav)
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "25vw";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+//  ----------for menu button, end-------- 
+
+
+// -----------search function start----------
+
+document.getElementById("i").addEventListener("click", search)
+
+
+function search() {
+    let q = document.getElementById("q").value
+    window.location.href = `${q}.html`
+}
+
+
+document.getElementById("q").addEventListener("keydown", serchenter)
+
+function serchenter(e) {
+    if (e.key == "Enter") {
+        let q = document.getElementById("q").value
+        window.location.href = `${q}.html`
+    }
+}
+// -----------search function end----------
 
 
 
