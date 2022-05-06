@@ -32,7 +32,7 @@ function navbar() {
                 <a href="">SHOP Local</a>
             </div>
 
-            <div class-"motives"><img
+            <div id="motives"><img
                     src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg"
                     id="img1">
             </div>
