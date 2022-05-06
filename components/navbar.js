@@ -15,12 +15,12 @@ function navbar() {
             <div id="login">
                 <a href=""><i class="fa-solid fa-circle-user"></i></a>
                 <a href=""><i class="fa-solid fa-arrow-rotate-left"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../HTML pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
 
         <div id="down">
-            <div><a href="index.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
+            <div><a href="/index.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
 
             <div id="anchor">
                 <a href="">Exclusive Brands</a>
@@ -32,7 +32,7 @@ function navbar() {
                 <a href="">SHOP Local</a>
             </div>
 
-            <div><img
+            <div id="motives"><img
                     src="https://img.shop.com/Image/header2013/motives-usa-can-100110-sculpting-concealer-banners-header1650486339409.svg"
                     id="img1">
             </div>

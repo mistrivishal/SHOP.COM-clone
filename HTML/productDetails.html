@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://img.shop.com/Image/resources/images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg">    <script src="https://kit.fontawesome.com/11e71d58fc.js" crossorigin="anonymous"></script>
     <title>Products - At SHOP.COM</title>
     <link rel="stylesheet" href="/Styles/productDetails.css">
 </head>
 <body>
+    <!-- ----------------menu <button> div start----------</button> -->
+    <div id="mySidenav" class="sidenav"> </div>
+    <!-- ---------------navbar----------------- -->
+    <div id="navbar"></div>
     <div id="product">
-        <div class="product-left">
-            <div class="productImg-list">
-                <img src="https://img.shop.com/Image/280000/282000/282022/products/1932866513.jpg?plain&size=1600x1600" alt="">
-                <img src="https://img.shop.com/Image/280000/282000/282022/skualt/2129872.jpg?plain&size=800x800" alt="">
-                <img src="https://img.shop.com/Image/280000/282000/282022/skualt/2129873.jpg?plain&size=800x800" alt="">
-            </div>
+        <!-- <div class="product-left">
             <div class="product-preview">
                 <img src="https://img.shop.com/Image/280000/282000/282022/products/1932866513.jpg?plain&size=1600x1600" alt="">
             </div>
@@ -50,7 +49,7 @@
                     <select name="qty" id="qty">
                         <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10+</option>
                     </select>
-                    <button class="cart-btn">Add to Cart</button>
+                    <button class="cart-btn" id="cart-btn">Add to Cart</button>
                 </div>
                 <div class="zip-code">
                     <input type="number" placeholder="zip code">
@@ -64,18 +63,17 @@
                     <p><span><img src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/M-ZBUCzfbNp.png" alt="">Likes</span> Be the first of your friends to like this.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div id="details">
         <h2>Details</h2>
-        <div class="product-details">
+        <div class="product-details" id="product-details">
             <p>A classic rope chain that's made to give your everyday look modern edge. Pair this chain with other necklaces to switch up your daily necklace stack.</p>
-            <ul>
-                <li>Metal: 14K gold plated over brass</li>
-                <li>Length: 17 inches</li>
-                <li>Width: 6 mm</li>
-            </ul>
         </div>
      </div>
+
+
+     <div id="footer"></div>
 </body>
 </html>
+<script src="/src/productPage.js" type="module"></script>

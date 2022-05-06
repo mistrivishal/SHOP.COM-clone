@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #main{
+          display: flex;
+          width: 30%;
+          gap: 5px;
+       }
+
+       #sidebar{
+          border: 1px solid;
+       }
+       #container{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 20px;
+          width: 70%;
+          margin-left: 310px;
+       }
+
+       #container>div{
+         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        /* padding:15px; */
+        /* height: 600px; */
+        line-height: 19px;
+        width: 370px;
+       }
+       #div1{
+           display: flex;
+           gap: 25px;
+           margin-top: -20px;
+           
+       }
+      #strick{
+        text-decoration: line-through;
+       }
+       #p4{
+         margin-top: -10px;
+         margin-left: 20px;
+       }
+
+       #div2{
+       display: flex;
+       margin-left: 20px;
+       
+      }
+       #p21{
+          /* margin-left: -55px; */
+          margin-top: -1px;
+          font-weight: bold;
+          font-size: 20px
+       }
+      
+      #price{
+         font-weight: bold;
+         font-size: 20px
+      }
+      #free{
+         color: rgb(27, 199, 226);
+         margin-left: 20px;
+      }
+      img{
+         height: 300px;
+         width: 350px;
+         margin-left: 10px;
+         }
+         #div3{
+           display: flex;
+         }
+       #btn1{
+          width: 380px;
+          padding: 10px;
+          background-color: #F0F1F7;
+          /* color: white; */
+          font-size: 16px;
+          border: 1px solid rgb(205, 201, 201);
+          font-weight: bold;
+       }
+       #btn2{
+          width: 380px;
+          padding: 10px;
+          background-color: #414467;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          border: 1px solid rgb(205, 201, 201);
+       }
+       #title{
+         margin-left: 20px;
+         font-size: 17px;
+         color: #2E2C38;
+       }
+       #title:hover{
+        color: #509bc1;
+        cursor: pointer;
+       }
+       #soldBy{
+         margin-left: 20px;
+       }
+
+         /* -------------sidenav----------------------- */
+
+      #toplabel{
+         font-size: 20px;
+         font-weight: bold;
+         color: #55a1c5;
+         margin-bottom: -50px;
+      }
+
+      span{
+         font-size: 13px;
+         color: #929194;
+      }
+
+      #topcheck{
+         margin-left: 35px;
+         margin-bottom: 15px;
+      }
+
+      label{
+         font-size: 13px;
+        
+       }
+      input{
+         margin-left: 20px;
+         height: 20px;
+         width: 20px;
+       
+      }
+     
+     #checkbox{
+        margin-bottom: 20px;
+        border-top: 1px solid rgb(206, 201, 201);
+        border-bottom: 1px solid rgb(226, 221, 221);
+        padding: 15px;
+     }
+
+
+
+      body {
+  font-family: "Lato", sans-serif;
+
+      }
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 281px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+  border: 0.2px solid rgb(199, 196, 196);
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+ 
+  text-decoration: none;
+  font-size: 16px;
+  /* color: #818181; */
+  color: #202340;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  line-height: 15px;
+ 
+}
+
+.sidenav a{
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #509bc1;
+}
+
+
+.main {
+  margin-left: 150px; 
+  font-size: 16px; 
+  padding: 0px 10px;
+}
+
+
+
+.dropdown-container {
+  display: none;
+  
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+       
+
+@media only screen and (min-width:421px) and (max-width:780px) {
+  #container{
+        
+          grid-template-columns: repeat(1,1fr);
+          
+       }
+       
+       .sidenav{
+           width:250px ;
+         }
+
+       #container>div{
+           margin-left: -10px;
+         }
+        
+        
+}
+
+@media only screen and (min-width:80px) and (max-width:420px) {
+  #container{
+        
+          grid-template-columns: repeat(1,1fr);
+         
+         }
+
+         .sidenav{
+           width:150px ;
+         }
+         #container>div{
+           margin-left: -170px;
+         }
+}
+   </style>
+</head>
+<body>
+   <div id="main">
+
+      <div class="sidenav">
+
+         <input id="topcheck" type="checkbox">
+         <label id="toplabel" for="">OneCart <span>(189,680)</span></label>
+         <!-- <label for=""><img src="https://img.shop.com/Image/resources/images/onecart-logo_icon.svg" alt=""></label> -->
+        <div id="checkbox">
+         <input type="checkbox">
+         <label for="">Sale items  (369,817)</label><br>
+         <input type="checkbox">
+         <label for="">shipping Offers</label>
+        </div>
+
+         <button class="dropdown-btn">Cell Phone & Accessory <br> Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Cases & Protectors  (8,457)</a>
+            <a href="#">Accessories  (2,023)</a>
+            <a href="#">Batteries & Battery Packs  (1,158)</a>
+            <a href="#">Chargers & Power Adapters  (1,011)</a>
+            <a href="#">Cell Phones  (187)</a>
+          </div>
+
+          <button class="dropdown-btn">Cell Phone Compatibility
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">iPhone 7  (1,166)</a>
+            <a href="#">iPhone 6  (1,067)</a>
+            <a href="#">iPhone 6 Plus  (434)</a>
+            <a href="#">iPhone 11  (268)</a>
+            <a href="#">iPhone 8  (202)</a>
+            <a href="#">iPhone XS  (204)</a>
+            <a href="#">iPhone 11 Pro  (169)</a>
+            <a href="#">iPhone X  (166)</a>
+            <a href="#">iPhone SE  (142)</a>
+            <a href="#">Galaxy S8  (83)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Cell Phone Case &  <br>Protector Color
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Beige  (25,431)</a>
+            <a href="#">Black  (138,251)</a>
+            <a href="#">Blue  (98,057)</a>
+            <a href="#">Brown  (17,187)</a>
+            <a href="#">Gray  (26,607)</a>
+            <a href="#">Green  (33,339)</a>
+            <a href="#">Off-White  (13,804)</a>
+            <a href="#">Pink  (43,144)</a>
+            <a href="#">Purple  (20,721)</a>
+            <a href="#">Red  (27,032)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+
+          <button class="dropdown-btn">Cell Phone Case & <br> Protector Material
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Leather  (633)</a>
+            <a href="#">Plastic  (562)</a>
+            <a href="#">Rubber & Silicone  (433)</a>
+            <a href="#">Metal  (69)</a>
+            <a href="#">Wood  (41)</a>
+          </div>
+
+
+          <button class="dropdown-btn">Cell Phone Accessory Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Cables  (796)</a>
+            <a href="#">Car Mounts  (456)</a>
+            <a href="#">Phone Grips  (133)</a>
+            <a href="#">Phone Charms  (101)</a>
+            <a href="#">Bluetooth Headsets  (65)</a>
+            <a href="#">Repair Kits  (44)</a>
+            <a href="#">Selfie Sticks & Tripods  (25)</a>
+            <a href="#">Virtual Reality Headsets  (20)</a>
+            <a href="#">Replacement Parts  (15)</a>
+            <a href="#">Lens Attachments  (8)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+
+          <button class="dropdown-btn">Cell Phone Case Feature
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Clips  (859)</a>
+            <a href="#">Kickstand  (138)</a>
+            <a href="#">Wallet  (148)</a>
+            <a href="#">Waterproof  (41)</a>
+            <a href="#">Charging Case  (27)</a>
+          </div>
+
+
+          <button class="dropdown-btn">Cell Phone Case & Protector <br> Pattern
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Glitter  (154)</a>
+            <a href="#">Stone  (228)</a>
+            <a href="#">Floral  (135)</a>
+            <a href="#">Solid  (80)</a>
+            <a href="#">Geometric  (30)</a>
+            <a href="#">Stripes  (23)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Store
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">UnbeatableSale  (9,011)</a>
+            <a href="#">My Goods  (1,765)</a>
+            <a href="#">GameStop  (1,032)</a>
+            <a href="#">iSave  (809)</a>
+            <a href="#">Sahara Case  (802)</a>
+            <a href="#">ShopEddies  (622)</a>
+            <a href="#">Macy's  (493)</a>
+            <a href="#">Simple Cell  (245)</a>
+            <a href="#">Monoprice  (240)</a>
+            <a href="#">SpectrumSuperStore  (389)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Brand
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Apple  (2,582)</a>
+            <a href="#">SAHARACASE  (391)</a>
+            <a href="#">Samsung  (331)</a>
+            <a href="#">Dream Wireless  (365)</a>
+            <a href="#">CASE-MATE  (160)</a>
+            <a href="#">Incipio Technologies  (55)</a>
+            <a href="#">LG  (109)</a>
+            <a href="#">Stealth Radar Shield™  (1)</a>
+            <a href="#">Empire Scientific  (127)</a>
+            <a href="#">Belkin  (121)</a>
+            <a href="#">+ See More</a>
+          </div>
+
+          <button class="dropdown-btn">Cell Phone Case &  <br>Protector Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Cases  (3,883)</a>
+            <a href="#">Skins  (2,734)</a>
+            <a href="#">Holsters  (594)</a>
+            <a href="#">Screen Protectors  (350)</a>
+      
+          </div>
+
+      </div>
+      <div id="container"></div>
+
+    </div>
+</body>
+</html>
+
+
+<script>
+
+// let electronic=[
+// {
+//            image:"https://img.shop.com/Image/250000/251800/251872/products/1927500512.jpg?size=400x400" ,
+//            title:"Samsung SM-G781UZRMXAA 128G Galaxy S20 FE 5G Android Cell Phone, Red",
+//            soldBy:"Sold by UnbeatableSale",
+//            price:788.42,
+//            strikedOffPrice:"$1,024.95 ",
+//            Cashback:"+   $39.42 / 5% Cashback",
+//            free:"Free shipping",
+//         },
+//         {
+//            image:"https://img.shop.com/Image/280000/281900/281909/products/1840586962.jpg?size=400x400" ,
+//            title:"TCL 40S325 40 inch LED 3-Series Roku Smart HD TV",
+//            soldBy:"Sold by Electronic Express",
+//            price:264.95,
+//            strikedOffPrice:"$449.99",
+//            Cashback:"+  $5.30 / 2% Cashback",
+//            free:"Free shipping",
+//         },
+//         {
+//            image:"https://img.shop.com/Image/280000/283700/283767/products/1925077793.jpg?size=400x400" ,
+//            title:"Sony Playstation 5 Digital Edition",
+//            soldBy:"StoreSold by Red Tags Cameras",
+//            price:799.99,
+//            strikedOffPrice:"$1,099.99",
+//            Cashback:"+ $32.00 / 4% Cashback",
+//            free:"Free shipping",
+//         },
+
+//         {
+//            image:"https://img.shop.com/Image/260000/265900/265904/products/1837201712.jpg?size=400x400" ,
+//            title:"Garmin Instinct Rugged Outdoor GPS Watch (010-02064-00) - Graphite",
+//            soldBy:"Sold by iSave",
+//            price:219.95,
+//            strikedOffPrice:"$263.99",
+//            Cashback:"+  $4.40 / 2% Cashback",
+//            free:"Free shipping",
+//         },
+//         {
+//            image:"https://img.shop.com/Image/280000/281900/281909/products/1865577475.jpg?size=400x400" ,
+//            title:"Vanguard ALTACA233APH Aluminum Tripod W/ 3Way Pan/Tilt Head",
+//            soldBy:"Sold by Electronic Express",
+//            price:99.99,
+//            strikedOffPrice:"$42.00",
+//            Cashback:"+  $2.00 / 2% Cashback",
+//            free:"Free shipping",
+//         },
+
+//         {
+//            image:"https://img.shop.com/Image/250000/251800/251872/products/1931434352.jpg?size=400x400" ,
+//            title:"Amazon B07PF1Y28C Echo Show 8 Smart Display - Charcoal",
+//            soldBy:"Sold by Fixx™",
+//            price:97.12,
+//            strikedOffPrice:"$136.76",
+//            Cashback:"+  $4.86 / 5% Cashback",
+//            free:"Free shipping",
+//         },
+//         {
+//            image:"https://img.shop.com/Image/260000/265900/265904/products/1792042711.jpg?size=400x400" ,
+//            title:"Vtech SN5147 plus 1-SN5307 Amplified Corded-Cordless Phones",
+//            soldBy:"Sold by Motives® Cosmetics",
+//            price:140.47,
+//            strikedOffPrice:"$168.99",
+//            Cashback:"+  $2.81 / 2% Cashback",
+//            free:"Free shipping",
+//         },
+       
+// ]
+
+
+
+let SeeDetailsArr=JSON.parse(localStorage.getItem("SeeDetails"))  || [] 
+
+
+
+fetch("../data/electronics1.json")
+.then(function(res){
+    return res.json();
+})
+.then(function(res){
+  // console.log(res)
+    appendData(res)
+    
+}).catch(function(err){
+  console.log(err)
+})
+
+
+
+function appendData(data){
+  console.log(data)
+    data.map((el)=>{
+
+      let div=document.createElement("div")
+
+      let image=document.createElement("img")
+      image.src=el.product_img_src
+      // image.src=el.product_img-src
+
+      let h2=document.createElement("p")
+      h2.innerHTML=el.product_name
+      h2.setAttribute("id","title")
+
+      let p1=document.createElement("p")
+      p1.innerHTML="Sold by Ranch & Home"
+      p1.setAttribute("id","soldBy")
+
+      let div1=document.createElement("div")
+      div1.setAttribute("id","div1")
+
+
+      let div2=document.createElement("div")
+      div2.setAttribute("id","div2")
+
+
+      let p2=document.createElement("p")
+      p2.innerHTML=el.product_price
+      p2.setAttribute("id","price")
+
+      let p21=document.createElement("p")
+      p21.innerHTML="$"
+      p21.setAttribute("id","p21")
+
+
+      let p3=document.createElement("p")
+      p3.innerHTML="$109.00"
+      p3.setAttribute("id","strick")
+
+      let p4=document.createElement("p")
+      p4.innerHTML="+ $1.56 / 6% Cashback"
+      p4.setAttribute("id","p4")
+
+      let p5=document.createElement("p")
+      p5.innerHTML="Free shipping"
+      p5.setAttribute("id","free")
+
+
+      let div3=document.createElement("div")
+      div3.setAttribute("id","div3")
+
+      let btn1=document.createElement("button")
+      btn1.innerHTML="See Details"
+      btn1.setAttribute("id","btn1")
+      btn1.addEventListener("click",function(){
+        SeeDetails(el)
+      });
+
+
+      let btn2=document.createElement("button")
+      btn2.innerHTML="Buying Options"
+      btn2.setAttribute("id","btn2")
+      btn2.addEventListener("click",function(){
+        SeeDetails(el)
+      });
+
+      div1.append(p2,p3)
+      div2.append(div1)
+      div3.append(btn1,btn2)
+      div.append(image,h2,p1,div2,p4,p5,div3)
+      document.getElementById("container").append(div)
+
+
+
+      
+    })
+
+  }
+
+  let SeeDetails=(el)=>{
+    SeeDetailsArr.push(el)
+    localStorage.setItem("SeeDetails",JSON.stringify(SeeDetailsArr))
+    window.location.href="../HTML pages/ProductDetails.html"
+}
+
+// ------------------------sidenav-----------------
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+</script>

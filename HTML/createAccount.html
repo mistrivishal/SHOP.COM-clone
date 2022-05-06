@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="../Styles/account.css">
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg">
+</head>
+
+<body>
+    <div id="create-account" class="my-account page-content margin-bottom-extra">
+        <header>
+            <h1 class="margin-left">Create an account</h1>
+        </header>
+        <form id="signup_form" class="shop-form create-account js-create-account-form" action="">
+            <div class="margin-both input_box">
+                <p class="note">* Indicates required field</p>
+                <div class="clear-both">
+                    <label class="input-left-half padding-bottom">First name*
+                        <br>
+                        <input name="first" type="text" placeholder="First name here" value="" class="resize"> </label>
+
+                    <label class="input-right-half padding-bottom">Last name*
+                        <br>
+                        <input name="last" type="text" placeholder="Last name here" value="" class="resize"> </label>
+
+
+                </div>
+                <br>
+                <label for="form-email" class="input-left-half">Email address*
+                    <br>
+                    <input id="form-email" name="email" type="email" class="js-email-exists-check"
+                        placeholder="yourname@example.com" value="" required="" class="resize" data-val="email">
+                </label>
+                <br>
+                <div class="js-email-exists-error" style="display:none">
+                    <p>There is an issue with the email address provided. Please contact customer service. </p>
+                    <!-- <br> -->
+                </div>
+                <!-- <br> -->
+
+
+                <!-- <br> -->
+                <div class="clear-both">
+                    <label for="password" class="input-left-half">Password* (At least 7
+                        characters)
+                        <br>
+                        <input id="password" name="password" class="js-password-create-account" type="password"
+                            placeholder="Please enter a minimum of 7 characters" value="" required="" minlength="7">
+                    </label>
+                    <label for="passwordConfirm" class="input-right-half">Confirm password*
+                        <br>
+                        <input id="passwordConfirm" name="passwordConfirm" type="password"
+                            class="js-password-confirm-create-account" placeholder="Please reenter your password"
+                            value="" required="" minlength="7" data-equals="password"> </label>
+                </div>
+                <div class="clear-both"></div>
+
+                <div id="mobile">
+                    <label for="mobile_num">
+                        Mobile number
+                        <br>
+                        <input type="text" id="mobile_num">
+                    </label>
+                </div>
+
+                <div class="refer-friend box box--rounded bg-lt-blue clear-both"> <label><span class="text">Were you
+                            referred by a friend?</span><br><span class="text">Enter their email address
+                            (Optional)</span>
+                        <br>
+                        <input id="referrer" autocomplete="off_hack" name="referrer" type="email" data-val="email"
+                            value=""> </label> </div> <input class="js-create-account-form-hash-code" type="hidden"
+                    name="bill-hash-code">
+            </div>
+            <br class="clear-both">
+            <div class="padding-left padding-right">
+                <h2 class="text-med strong">Email deals: (Optional)</h2>
+            </div>
+            <div class="email-sign-up clear margin-both margin-bottom-extra"> <label
+                    class="checkbox__container margin-top" for="optInIds"> <input id="optInIds" name="optInIds"
+                        type="checkbox" checked="checked"> <span class="checkbox__text">Do you want to sign up for sweet
+                        email offers and discounts from SHOP.COM?</span> </label>
+                <br>
+                <label class="checkbox__container margin-top" for="ma-email-register"> <input id="ma-email-register"
+                        name="optin-ma-brands" type="checkbox" checked="checked"> <span class="checkbox__text">Do you
+                        want to sign up for sweet email offers and discounts from MarketAmerica.com and its
+                        brands?</span> </label>
+            </div>
+
+
+
+
+            <div class="margin-both clear-both margin-bottom-extra">
+                <button id="submit-button" class="js-create-account-submit button primary full-width js-no-spinner"
+                    type="submit">Create your
+                    new account</button>
+
+                <p>By creating an account, you are agreeing to our <a class="js-no-spinner" target="_blank"
+                        href="/abouttermsofuse-t.xhtml">Terms of Service</a> and <a class="js-no-spinner"
+                        target="_blank" href="/AboutPrivacyPolicy-t.xhtml">Privacy Policy</a>.</p>
+            </div>
+        </form>
+    </div>
+
+
+    
+    <script src="../src/account.js" type="module"></script>
+</body>
+
+</html>

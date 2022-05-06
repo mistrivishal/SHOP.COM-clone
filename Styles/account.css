@@ -1,0 +1,169 @@
+body
+{
+    color: #202340;
+}
+
+.shop-form
+{
+    border: 1px  red;
+    /* padding: 3%; */
+}
+
+#create-account
+{
+    border: 1px  rgb(95, 6, 229);
+    width: 70%;
+    margin: auto;
+    padding: 3%;
+}
+
+.input_box input    /*input boxes*/
+{
+    border:  1px solid #202340;
+    /* width: 80%; */
+    height: 2.1rem;
+    min-width: 25em;
+    /* box-sizing: border-box; */
+     
+}
+
+
+
+.input-right-half
+{
+    /* margin-left: 8%; */
+}
+
+.clear-both
+{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+
+}
+
+.create-account__wrapper
+{
+    border: 1px  blue;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.create-account__mobile-wrapper
+{
+    border: 1px solid red;
+    
+}
+
+.refer-friend
+{
+    border: 1px dotted rgb(183, 181, 181);
+    padding: 2%;
+}
+
+.margin-bottom-extra
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-bottom-extra button
+{
+    width: 50%;
+    height: 3rem;
+    background-color: #202340;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+
+.margin-bottom-extra button:hover
+{
+    background-color: #4a539e;
+    cursor: pointer;
+}
+
+@media (max-width:1068px)
+{
+    .input_box input
+    {
+        min-width: 23em;
+    }
+}
+
+@media (max-width:980px)
+{
+    .input_box input
+    {
+        min-width: 21em;
+    }
+}
+@media (max-width:893px)
+{
+    .input_box input
+    {
+        min-width: 19em;
+    }
+}
+@media (max-width:808px)
+{
+    .clear-both
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+    .input_box input
+    {
+        min-width: 25em;
+    }
+
+    #create-account
+    {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:420px)
+{
+    #create-account
+    {
+        width: 98%;
+    }
+
+    .input_box input
+    {
+        min-width: 21em;
+    }
+
+    .margin-bottom-extra button
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width:320px)
+{
+    .input_box input
+    {
+        min-width: 18em;
+    }
+
+    .margin-bottom-extra button
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+
+
