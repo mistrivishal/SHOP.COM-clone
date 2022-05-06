@@ -45,7 +45,7 @@
             <p id="right4b">$0.29</p>
         </div>
         <hr id="right5">
-        <button id="right6">Continue Checkout</button>
+        <a href="./shipping.html"><button id="right6">Continue Checkout</button></a>
         <p id="right7">By clicking continue, you agree to the SHOP.COM</p>
         <p id="right8"><a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
         <p id="right9">Let us know how we are doing <a href="#">Send Feedback</a>
@@ -115,4 +115,7 @@ document.getElementById('left').append(box2);
 // function ship(){
 //     window.location.href="shipping.html";
 // }
+let total=JSON.parse(localStorage.getItem("CartTotal"));
+document.getElementById('line1b').innerText="Order total:$"+total;
+document.getElementById('right3b').innerText='$'+total;
 </script>
