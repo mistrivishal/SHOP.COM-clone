@@ -55,6 +55,17 @@
 </div>
 
     </div>
+    <div id="cart-footer">
+        <div class="dis">
+            <p>© 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. (famos-p11)</p>
+            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+        </div>
+        <div>
+            <a href="">
+                <img src="https://www.aiowork.com/wp-content/uploads/2021/06/digicert-ssl-certificate.png" alt="">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
 <script src="../src/address.js" type="module"></script>
@@ -89,10 +100,19 @@ p4.innerText='This address is indicated as a PO Box';
 let p5=document.createElement('a');
 p5.innerText="edit address";
 p5.href='#';
-p5.id="p5"
+p5.id="p5";
+p5.addEventListener('click',open);
+function open(){
+    window.location.href="./shipping address form.html"
+}
 box5.append(p4,p5);
 box4.append(p1,p2,p3,box5);
 
 box2.append(box3,box4);
 document.getElementById('left').append(box2);
+
+// document.getElementById('right6').addEventListener('click',ship);
+// function ship(){
+//     window.location.href="shipping.html";
+// }
 </script>

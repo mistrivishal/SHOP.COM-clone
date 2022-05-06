@@ -277,3 +277,36 @@ margin-top: -15px;
     font-weight: lighter;
     /* margin-left: 400px; */
 }
+
+
+
+/* footer */
+#cart-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f0f1f7;
+    border-top: 2px solid #bfc1cd;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+#cart-footer p{
+    font-size: 12px;
+}
+#cart-footer a{
+    text-decoration: none;
+    color: inherit;
+}
+#cart-footer div:last-child{
+    text-align: end;
+}
+#cart-footer img{
+    width: 25%;
+}
+#cart-footer p:last-child:hover{
+    color: #00a8ca;
+    cursor: pointer;
+}
