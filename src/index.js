@@ -136,7 +136,11 @@ document.getElementById("i").addEventListener("click", search)
 
 function search() {
     let q = document.getElementById("q").value
-    window.location.href = `${q}.html`
+    if (q == "") {
+        alert("Please Enter Valid Input")
+    } else {
+        window.location.href = `${q}.html`
+    }
 }
 
 
@@ -145,7 +149,11 @@ document.getElementById("q").addEventListener("keydown", serchenter)
 function serchenter(e) {
     if (e.key == "Enter") {
         let q = document.getElementById("q").value
-        window.location.href = `${q}.html`
+        if (q == "") {
+            alert("Please Enter Valid Input")
+        } else {
+            window.location.href = `${q}.html`
+        }
     }
 }
 

@@ -8,7 +8,8 @@
     <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Document</title>
+    <title>SHOP.COM - Online Shopping Marketplace: Clothes, Shoes, Beauty, Electronics and More</title>
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg">
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -16,7 +17,9 @@
 <body>
     <!-- ----------for menu button, start--------  -->
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+
         <div id="slidenav1">
             <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
             <h2>SHOP.COM</h2>
@@ -68,8 +71,14 @@
         <a href=""><i class="fa-solid fa-stethoscope"></i>Nutri-Physical</a>
 
     </div>
-
     <!-- ----------for menu button, end--------  -->
+
+    <!-- ----------for back to top button, start--------  -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+    <!-- ----------for back to top button, end--------  -->
+
 
     <div id="head">
         <p>Get 20% OFF with these blooming deals this Spring when you use your Mastercard® and Click to Pay. Terms
@@ -499,7 +508,7 @@
                 <a href="girl.html"><img
                         src="https://img.shop.com/Image/240000/248200/248295/products/1919935435.jpg?size=400x400"></a>
 
-                <h4>GIRLS'CLOTHING</h4>
+                <h4>GIRLS' CLOTHING</h4>
             </div>
             <div>
                 <a href="boy.html"><img
@@ -714,5 +723,27 @@
         document.getElementById("mySidenav").style.width = "0";
     }
 
+</script>
+<script>
+    //back to top button
+
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 <script src="./script/index.js" type="module"></script>
