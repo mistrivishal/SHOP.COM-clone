@@ -13,14 +13,14 @@ function navbar() {
             </div>
 
             <div id="login">
-                <a href=""><i class="fa-solid fa-circle-user"></i></a>
+                <a href="../HTML/login.html"><i class="fa-solid fa-circle-user"></i></a>
                 <a href=""><i class="fa-solid fa-arrow-rotate-left"></i></a>
-                <a href="../HTML pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../HTML/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
 
         <div id="down">
-            <div><a href="/index.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
+            <div><a href="../index.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
 
             <div id="anchor">
                 <a href="">Exclusive Brands</a>

@@ -139,7 +139,7 @@ function search() {
     if (q == "") {
         alert("Please Enter Valid Input")
     } else {
-        window.location.href = `${q}.html`
+        window.location.href = `./HTML/${q}.html`
     }
 }
 
@@ -152,7 +152,7 @@ function serchenter(e) {
         if (q == "") {
             alert("Please Enter Valid Input")
         } else {
-            window.location.href = `${q}.html`
+            window.location.href = `./HTML/${q}.html`
         }
     }
 }
