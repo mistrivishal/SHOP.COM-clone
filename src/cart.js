@@ -96,15 +96,15 @@ document.getElementById("int").innerText = `$${(total/4).toFixed(2)}`;
 
 // document.getElementById("qty2").value;
 
-//remove from cart-->
-
+//-----Remove from cart--------->
 
 function removeItem(elem,idx){
     cart.splice(idx,1)
     localStorage.setItem("myCart",JSON.stringify(cart))
     window.location.reload()
 }
-// document.getElementById("shipping").innerText = null;
+
+// <------Shippping Charges-------->
 
 function shippingCharge(){
     let zip = document.getElementById("ent_zip").value;
@@ -116,4 +116,13 @@ function shippingCharge(){
     }
 }
 
+// <------Checkout page-------->
+
 document.getElementById("estimate").addEventListener("click", shippingCharge)
+
+function checkout(){
+    localStorage.setItem("CartTotal",JSON.stringify([total]));
+    window.location.href = ""
+}
+
+document.getElementById("checkout").addEventListener("click", checkout)
