@@ -47,11 +47,11 @@ document.getElementById("footer").innerHTML = footer();
 //get item from local storage------>
 //append data getting from local storage here------>
 
-const append = ()=>{
-    let product = JSON.parse(localStorage.getItem("SeeDetails"));    
+const append = () => {
+    let product = JSON.parse(localStorage.getItem("SeeDetails"));
     let container = document.getElementById("product");
     container.innerHTML = null;
-    product.forEach(({product_img_src,product_name,product_price,}) => {
+    product.forEach(({ product_img_src, product_name, product_price, }) => {
 
         container.innerHTML = `
         <div class="product-left">
@@ -69,7 +69,7 @@ const append = ()=>{
                     </div>
                     <div class="product-price">
                         <p class="price">${product_price} <span>+$1.60 / 2% <img class="cashback-icon" src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt=""> Cashback</span></p>
-                        <p class="sezzle">or 4 interest-free payments of <span>$${+((product_price.split("$").pop())/4).toFixed(2)} </span> with <img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg" alt=""> ⓘ</p>
+                        <p class="sezzle">or 4 interest-free payments of <span>$${+((product_price.split("$").pop()) / 4).toFixed(2)} </span> with <img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg" alt=""> ⓘ</p>
                     </div>
                     <div class="free-ship">
                         <p>Free shipping on orders $99 and up from Market America</p>
@@ -114,14 +114,14 @@ append()
 
 //store to cart----
 
-let cart = JSON.parse(localStorage.getItem("myCart"))||[]
+let cart = JSON.parse(localStorage.getItem("myCart")) || []
 
-const addTocart = ()=>{
-    let product = JSON.parse(localStorage.getItem("SeeDetails"));  
+const addTocart = () => {
+    let product = JSON.parse(localStorage.getItem("SeeDetails"));
     // console.log(product[0])
     cart.push(product[0])
     // console.log(cart)
-    localStorage.setItem("myCart",JSON.stringify(cart))
+    localStorage.setItem("myCart", JSON.stringify(cart))
     window.location.reload()
 }
 
