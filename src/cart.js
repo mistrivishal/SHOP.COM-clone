@@ -25,7 +25,12 @@ document.getElementById("i").addEventListener("click", search)
 
 function search() {
     let q = document.getElementById("q").value
-    window.location.href = `${q}.html`
+    if (q == "") {
+        alert("Enter Valid Input")
+    }
+    else {
+        window.location.href = `${q}.html`
+    }
 }
 
 
@@ -34,7 +39,12 @@ document.getElementById("q").addEventListener("keydown", serchenter)
 function serchenter(e) {
     if (e.key == "Enter") {
         let q = document.getElementById("q").value
-        window.location.href = `${q}.html`
+        if (q == "") {
+            alert("Enter Valid Input")
+        }
+        else {
+            window.location.href = `${q}.html`
+        }
     }
 }
 // -----------search function end----------
@@ -43,9 +53,9 @@ function serchenter(e) {
 let cart = JSON.parse(localStorage.getItem("myCart")) || [];
 let cart_left = document.getElementById("product-info");
 
-const append = ()=>{
+const append = () => {
     cart_left.innerHTML = ""
-    cart.forEach((elem,idx) => {
+    cart.forEach((elem, idx) => {
         // console.log(cart)
         cart_left.innerHTML += `
         <h2>Shipment from Market America</h2>
@@ -71,8 +81,8 @@ const append = ()=>{
             </div>
         </div>
         `;
-        document.getElementById("remove").addEventListener("click", ()=>{
-            removeItem(elem,idx)
+        document.getElementById("remove").addEventListener("click", () => {
+            removeItem(elem, idx)
         })
     });
 }
@@ -81,38 +91,38 @@ append()
 
 let length = cart.length;
 console.log(length)
-localStorage.setItem("cartLength",JSON.stringify(length));
+localStorage.setItem("cartLength", JSON.stringify(length));
 
-var total = cart.reduce(function(sum,elem){
+var total = cart.reduce(function (sum, elem) {
     return sum + +(elem.product_price.split('$').join(''))
-},0)
+}, 0)
 
 // console.log(total)
 document.getElementById("total-price").innerText = `$${total}`;
 
 document.getElementById("total-price-right").innerText = `$${total}`;
 
-document.getElementById("int").innerText = `$${(total/4).toFixed(2)}`;
+document.getElementById("int").innerText = `$${(total / 4).toFixed(2)}`;
 
 // document.getElementById("qty2").value;
 
 //-----Remove from cart--------->
 
-function removeItem(elem,idx){
-    cart.splice(idx,1)
-    localStorage.setItem("myCart",JSON.stringify(cart))
+function removeItem(elem, idx) {
+    cart.splice(idx, 1)
+    localStorage.setItem("myCart", JSON.stringify(cart))
     window.location.reload()
 }
 
 // <------Shippping Charges-------->
 
-function shippingCharge(){
+function shippingCharge() {
     let zip = document.getElementById("ent_zip").value;
-    if(zip.length === 6){
+    if (zip.length === 6) {
         document.getElementById("shipping").innerText = "Shipping: $0.00";
     }
-    else{
-        document.getElementById("shipping").innerText = "Enter Valid Zipcode"; 
+    else {
+        document.getElementById("shipping").innerText = "Enter Valid Zipcode";
     }
 }
 
@@ -120,8 +130,8 @@ function shippingCharge(){
 
 document.getElementById("estimate").addEventListener("click", shippingCharge)
 
-function checkout(){
-    localStorage.setItem("CartTotal",JSON.stringify([total]));
+function checkout() {
+    localStorage.setItem("CartTotal", JSON.stringify([total]));
     window.location.href = ""
 }
 
