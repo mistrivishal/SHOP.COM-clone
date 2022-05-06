@@ -134,4 +134,9 @@ function removeItem(elem,idx){
 }
 let total=JSON.parse(localStorage.getItem("CartTotal"));
 document.getElementById("total-price").innerText = "$"+total;
+// let total=JSON.parse(localStorage.getItem("CartTotal"));
+document.getElementById('line1b').innerText="Order total:$"+total;
+document.getElementById("right2ab").innerText = "$"+total;
+document.getElementById("right3b").innerText = "$"+total;
+
 

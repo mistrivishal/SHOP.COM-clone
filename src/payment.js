@@ -30,3 +30,14 @@ p5.id="p5";
 box5.append(p4,p5);
 box4.append(p1,p2,p3,box5);
 document.getElementById('bottom-left').append(box4);
+
+let total=JSON.parse(localStorage.getItem("CartTotal"));
+document.getElementById('line1b').innerText="Order total:$"+total;
+document.getElementById('right2ab').innerText="$"+total;
+document.getElementById('right3b').innerText="$"+total;
+
+document.querySelector('#right7b').addEventListener('click',place);
+function place(){
+    alert('Your order has been successfully placed!!');
+}
+
