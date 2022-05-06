@@ -20,7 +20,7 @@ function navbar() {
         </div>
 
         <div id="down">
-            <div><a href="../index.html"><img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
+            <div><a href="../index.html"><img  id="ppp" src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg"></a></div>
 
             <div id="anchor">
                 <a href="">Exclusive Brands</a>
