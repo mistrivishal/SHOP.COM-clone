@@ -1,4 +1,4 @@
-import { navbar, sidenav } from "../components/navbar.js";
+import { navbar, sidenav } from "./navbar.js";
 document.getElementById("navbar").innerHTML = navbar()
 document.getElementById("mySidenav").innerHTML = sidenav()
 
@@ -37,3 +37,11 @@ function serchenter(e) {
     }
 }
 // -----------search function end----------
+
+
+//-----------footer start---------------
+import { footer } from "../components/footer.js"
+document.querySelector("#footer").innerHTML = footer()
+
+
+//-----------footer end---------------
