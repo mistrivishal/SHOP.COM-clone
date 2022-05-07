@@ -13,9 +13,13 @@ function navbar() {
             </div>
 
             <div id="login">
+
                 <a href="../HTML/login.html"><i class="fa-solid fa-circle-user"></i></a>
-                <a href=""><i class="fa-solid fa-arrow-rotate-left"></i></a>
-                <a href="../HTML/cart.html"><p id="cartLength"></p> <i class="fa-solid fa-cart-shopping"></i></a>
+
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+
+                <a href="../HTML/cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+  
             </div>
         </div>
 
@@ -95,3 +99,6 @@ function sidenav() {
 
 
 export { navbar, sidenav }
+
+
+
