@@ -1,7 +1,7 @@
 #navbar {
-    /* border: 1px solid red; */
     position: fixed;
     top: 0;
+    width: 100%;
     /* left: 0; */
     z-index: 1;
     background-color: #f0f1f7;
@@ -48,6 +48,7 @@
 
 #motives {
     /* border: 1px solid red; */
+    margin-right: 50px;
 }
 
 #motives img {
@@ -327,10 +328,7 @@
     gap: 5px;
 }
 
-#sidebar {
-    /* border: 1px solid red; */
-    /* border: 1px solid; */
-}
+
 
 #container {
     /* border: 1px solid red; */
@@ -400,7 +398,7 @@ img {
     /* width: 350px; */
     width: 90%;
     margin: auto;
-    /* margin-left: 10px; */
+    margin-left: 30px;
 }
 
 #div3 {
@@ -616,3 +614,57 @@ body {
         margin-left: -170px;
     }
 }
+
+
+
+ @media only screen and (min-width:421px) and (max-width:780px) {
+    #connect1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #conn {
+        margin: 5px 0 0 0;
+    }
+
+
+    #connect2 {
+        display: none;
+    }
+
+    #images {
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width:80px) and (max-width:420px) {
+    #connect1 a {
+        display: none;
+    }
+
+    #conn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ac {
+        margin: 50px 0;
+        flex-direction: column;
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #image {
+        width: auto;
+        text-align: center;
+    }
+    #footer{
+        width: auto;
+    }
+} 
