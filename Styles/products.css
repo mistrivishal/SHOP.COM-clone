@@ -46,9 +46,7 @@
     gap: 6.5vw;
 }
 
-#motives {
-    /* border: 1px solid red; */
-}
+
 
 #motives img {
     width: 50px;
@@ -329,7 +327,7 @@
 
 #sidebar {
     /* border: 1px solid red; */
-    /* border: 1px solid; */
+    border: 1px solid;
 }
 
 #container {
