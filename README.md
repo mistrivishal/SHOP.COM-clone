@@ -22,7 +22,7 @@ https://drive.google.com/file/d/1Elzo32SrBGF0n6uxxu1ZDnn8c-NBnrvL/view?usp=drive
 👉Introduce my teammates:
 1) Krunal Bhandekar
 2) Hemanth Kumar
-3) Vishal Mistry
+3) Vishal Mistri
 4) Mamata Ingole
 5) Mobin
 6) Sunil Ingole
