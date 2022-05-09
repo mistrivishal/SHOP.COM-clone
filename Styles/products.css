@@ -1,13 +1,14 @@
 #navbar {
+    width: 100%;
     /* border: 1px solid red; */
     position: fixed;
     top: 0;
-    /* left: 0; */
+    left: 0;
     z-index: 1;
     background-color: #f0f1f7;
     padding: 15px 0px 15px 25px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    height: 150px;
+    /* height: 150px; */
 }
 
 #navbar div {
@@ -162,9 +163,25 @@
     top: 0;
     left: 0;
     background-color: #f0f1f7;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow: scroll;
     transition: 0.5s;
     padding-top: 1vw;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #51556c;
+    border-radius: 20px;
 }
 
 #slidenav1 {
@@ -207,10 +224,6 @@
     font-size: 3vw;
     margin-left: 5vw;
 }
-
-
-
-
 
 /* --------navbar end----------- */
 
