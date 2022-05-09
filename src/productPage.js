@@ -131,3 +131,10 @@ document.getElementById("cart-btn").addEventListener("click", addTocart);
 let length = cart.length;
 console.log(length)
 localStorage.setItem("cartLength",JSON.stringify(length));
+
+let cartP = get("cartLength");
+if(cartP !== null){
+    cartP.innerText = `${length}`;
+}else{
+    cartP.innerText = `${0}`;
+}

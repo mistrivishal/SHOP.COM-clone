@@ -423,6 +423,19 @@
     line-height: 1.6;
     margin: auto;
 }
+#cartLength{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    right: 1%;
+    top: -3%;
+    padding: 1px 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0.5px dotted;
+    background: #fff;
+    box-sizing: border-box;
+}
 
 /* -----------footer start---------- */
 

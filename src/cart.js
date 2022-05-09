@@ -165,7 +165,11 @@ var total = cart.reduce(function (sum, elem) {
 
 // console.log(total)
 let cartP = get("cartLength");
-cartP.innerText = `${length}`;
+if(cartP !== null){
+    cartP.innerText = `${length}`;
+}else{
+    cartP.innerText = `${0}`;
+}
 
 
 get("total-price").innerText = `$${total}`;
