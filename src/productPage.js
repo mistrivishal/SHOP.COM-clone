@@ -45,6 +45,15 @@ import { footer } from "../components/footer.js";
 document.getElementById("footer").innerHTML = footer();
 
 //get item from local storage------>
+// helper function---------->
+// 1. getElementById----->
+let get = (x) => {
+    return document.getElementById(x);
+}
+// 2. createElement
+let create = (x) => {
+    return document.createElement(x);
+}
 //append data getting from local storage here------>
 
 const append = () => {
