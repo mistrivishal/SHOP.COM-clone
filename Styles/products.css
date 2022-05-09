@@ -43,9 +43,12 @@
 #down {
     margin-top: 90px;
     /* border: 1px solid red; */
-    gap: 6.5vw;
+    /* gap: 6.5vw; */
+    justify-content: space-between;
 }
-
+#down img{
+    margin-left: -10%;
+}
 #motives {
     /* border: 1px solid red; */
     margin-right: 50px;
@@ -120,6 +123,7 @@
 #anchor {
     display: flex;
     gap: 2vw;
+    margin-left: -10%;  
 }
 
 #anchor a {

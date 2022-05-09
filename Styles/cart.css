@@ -41,8 +41,11 @@
 #down {
     justify-content: space-between;
 }
+#down #motives{
+    justify-content: flex-end;
+}
 #navbar img {
-    width: 15vw;
+    width: 75%;
 }
 #in {
     display: flex;
@@ -92,6 +95,7 @@
 #anchor {
     display: flex;
     gap: 2vw;
+    margin-left: -10%;  
 }
 #anchor a {
     color: #454760;
