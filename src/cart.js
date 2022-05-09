@@ -58,12 +58,12 @@ let cart = JSON.parse(localStorage.getItem("myCart"));
 let cart_left = get("product-info");
 
 cart.forEach((elem, idx) => {
-    console.log(cart)
+    // console.log(cart)
     // cart_left.innerHTML = null;
     let heading = create("h2");
-    console.log(heading)
+    // console.log(heading)
     heading.innerText = "Shipment from Market America";
-    console.log(heading)
+    // console.log(heading)
     let truck = create("p");
     truck.className = "truck"
     let span1 = create("span");
@@ -87,7 +87,7 @@ cart.forEach((elem, idx) => {
 
     cart_product_img.classList.add("cart-product-img");
     let product_img = create("img");
-    product_img.src = `${elem.product_image_src}`;
+    product_img.src = `${elem.product_img_src}`;
 
     cart_product_img.append(product_img);
 
@@ -98,7 +98,7 @@ cart.forEach((elem, idx) => {
     let h3 = create("h3");
     h3.innerText = `${elem.product_name}`;
     let price = create("p");
-    price.innerText = `${elem.product_price}`;
+    price.innerText = `${(elem.product_price).split("-").pop()}`;
     price.classList.add("price");
     let cashback = create("p")
     //  `<span>+$1.60 / 2% <img class="cashback-icon" src="" alt=""> Cashback</span>`;
@@ -160,7 +160,7 @@ console.log(length)
 localStorage.setItem("cartLength", JSON.stringify(length));
 
 var total = cart.reduce(function (sum, elem) {
-    return sum + +(elem.product_price.split('$').join(''))
+    return sum + +(elem.product_price.split('$').join('').split("-").pop())
 }, 0)
 
 // console.log(total)
