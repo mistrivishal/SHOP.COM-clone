@@ -11,12 +11,13 @@ import { getDatabase,ref,update } from "https://www.gstatic.com/firebasejs/9.7.0
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBWNYPDpvIpp4xA_Mz0sc5B6uldb_Qgv_c",
-    authDomain: "setup-dc13f.firebaseapp.com",
-    projectId: "setup-dc13f",
-    storageBucket: "setup-dc13f.appspot.com",
-    messagingSenderId: "366492053525",
-    appId: "1:366492053525:web:a58b32973a2f75f0465e1c"
+  apiKey: "AIzaSyAR5zqqCggiYONEPLnnBXwFfc7eq_yyO18",
+  authDomain: "signup-6b16b.firebaseapp.com",
+  databaseURL: "https://signup-6b16b-default-rtdb.firebaseio.com",
+  projectId: "signup-6b16b",
+  storageBucket: "signup-6b16b.appspot.com",
+  messagingSenderId: "980295878149",
+  appId: "1:980295878149:web:e5231bec8ab6986e6d3e6c"
 };
 
 // Initialize Firebase
