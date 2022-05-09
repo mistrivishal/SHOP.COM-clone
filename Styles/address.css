@@ -29,6 +29,10 @@
     /* gap: 25px; */
     margin-right: 10px;
 }
+#line2 #address{
+    background-color: black;
+    color:white;
+}
 /* #address{
     background-color:darkgrey;
     color:white;
@@ -41,14 +45,15 @@ hr{
 }
 #bottom{
     display: flex;
+    gap:5%
 }
 #left{
-    width:63%;
-    border:2px solid red
+    width:60%;
+    /* border:2px solid red */
 }
 #right{
-    width: 33%;
-    border: 2px solid black;
+    width: 30%;
+    /* border: 2px solid black; */
     padding-left: 10px;
     
 }
@@ -72,6 +77,7 @@ hr{
 #line4b{
     color: #202340;
     padding-top: 10px;
+    margin-right: 20px;
 }
 #line5{
     font-size: 1rem;
@@ -178,4 +184,52 @@ hr{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+}
+
+/* cart footer */
+#cart-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f0f1f7;
+    border-top: 2px solid #bfc1cd;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+#cart-footer p{
+    font-size: 12px;
+}
+#cart-footer a{
+    text-decoration: none;
+    color: inherit;
+}
+#cart-footer div:last-child{
+    text-align: end;
+}
+#cart-footer img{
+    width: 25%;
+}
+#cart-footer p:last-child:hover{
+    color: #00a8ca;
+    cursor: pointer;
+}
+@media only screen and (min-width:80px) and (max-width:780px){
+    #bottom{
+        display: grid;
+        grid-template-columns: repeat(1,100);
+    }
+    #left{
+        width:90%;
+        /* border:2px solid red */
+    }
+    #right{
+        width: 90%;
+        /* border: 2px solid black; */
+        padding-left: 10px;
+        margin-top: 30px;
+        
+    }
 }

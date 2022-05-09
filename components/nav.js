@@ -37,3 +37,11 @@ function serchenter(e) {
     }
 }
 // -----------search function end----------
+
+
+//-----------footer start---------------
+import { footer } from "../components/footer.js"
+document.querySelector("#footer").innerHTML = footer()
+
+
+//-----------footer end---------------

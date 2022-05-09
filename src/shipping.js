@@ -1,43 +1,25 @@
-//import nav nad footer here------->
-import { navbar, sidenav } from "../components/navbar.js";
-document.getElementById("navbar").innerHTML = navbar()
-document.getElementById("mySidenav").innerHTML = sidenav()
+import { navbar2 } from "../components/navbar2.js";
+document.getElementById('navbar2').innerHTML = navbar2();
 
-//  ----------for menu button, start-------- 
-document.getElementById("open").addEventListener("click", openNav)
-document.getElementById("close").addEventListener("click", closeNav)
-function openNav() {
-    document.getElementById("mySidenav").style.width = "25vw";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-//  ----------for menu button, end-------- 
 
-// -----------search function start----------
-document.getElementById("i").addEventListener("click", search)
-function search() {
-    let q = document.getElementById("q").value
-    if (q == "") {
-        alert("Enter Valid Input")
-    }
-    else {
-        window.location.href = `${q}.html`
-    }
-}
-document.getElementById("q").addEventListener("keydown", serchenter)
+let details = JSON.parse(localStorage.getItem('details'));
+// console.log(details1.first_name);
+// details1.map(function(e){
+// console.log(e);
+let first_name = details.first_name;
+// console.log(first_name)
+let last_name = details.last_name;
+let p1 = document.createElement('p');
+p1.innerText = first_name + ' ' + last_name;
+let p2 = document.createElement('p');
+p2.innerText = details.address;
+let p3 = document.createElement('p');
+p3.innerText = details.city + ', ' + details.state + ', ' + details.zip;
+// box4.append(p1,p2,p3);
+document.getElementById('box4').append(p1, p2, p3);
+// })
 
-function serchenter(e) {
-    if (e.key == "Enter") {
-        let q = document.getElementById("q").value
-        if (q == "") {
-            alert("Enter Valid Input")
-        }
-        else {
-            window.location.href = `${q}.html`
-        }
-    }
-}
+
 // -----------search function end---------->
 
 // helper function---------->
@@ -51,19 +33,18 @@ let create = (x) => {
 }
 
 
+let cart = JSON.parse(localStorage.getItem("myCart")) || [];
+console.log(cart);
 
-
-let cart = JSON.parse(localStorage.getItem("myCart"));
-
-let cart_left = get("product-info");
+let cart_left = document.getElementById("product-info");
 
 cart.forEach((elem, idx) => {
-    // console.log(cart)
+    console.log(cart)
     // cart_left.innerHTML = null;
     let heading = create("h2");
-    // console.log(heading)
+    console.log(heading)
     heading.innerText = "Shipment from Market America";
-    // console.log(heading)
+    console.log(heading)
     let truck = create("p");
     truck.className = "truck"
     let span1 = create("span");
@@ -98,7 +79,7 @@ cart.forEach((elem, idx) => {
     let h3 = create("h3");
     h3.innerText = `${elem.product_name}`;
     let price = create("p");
-    price.innerText = `${(elem.product_price).split("-").pop()}`;
+    price.innerText = `${elem.product_price}`;
     price.classList.add("price");
     let cashback = create("p")
     //  `<span>+$1.60 / 2% <img class="cashback-icon" src="" alt=""> Cashback</span>`;
@@ -145,63 +126,19 @@ cart.forEach((elem, idx) => {
 
     cart_left.append(heading, truck, cart_product);
 });
-//-----Remove from cart--------->
+
 function removeItem(elem, idx) {
-    cart.splice(idx, 1);
-
-    localStorage.setItem("myCart", JSON.stringify(cart));
-    // localStorage.clear()
-    window.location.reload();
+    cart.splice(idx, 1)
+    localStorage.setItem("myCart", JSON.stringify(cart))
+    window.location.reload()
 }
-
-
-let length = cart.length;
-console.log(length)
-localStorage.setItem("cartLength", JSON.stringify(length));
-
 var total = cart.reduce(function (sum, elem) {
     return sum + +(elem.product_price.split('$').join('').split("-").pop())
 }, 0)
+document.getElementById("total-price").innerText = "$" + total;
+// let total=JSON.parse(localStorage.getItem("CartTotal"));
+document.getElementById('line1b').innerText = "Order total:$" + total;
+document.getElementById("right2ab").innerText = "$" + total;
+document.getElementById("right3b").innerText = "$" + total;
 
-// console.log(total)
-let cartP = get("cartLength");
-if(cartP !== null){
-    cartP.innerText = `${length}`;
-}else{
-    cartP.innerText = `${0}`;
-}
-
-
-get("total-price").innerText = `$${total}`;
-
-get("total-price-right").innerText = `$${total}`;
-
-get("int").innerText = `$${(total / 4).toFixed(2)}`;
-
-// get("qty2").value;
-
-// <------Shippping Charges-------->
-
-function shippingCharge() {
-    let zip = get("ent_zip").value;
-    if (zip.length === 6) {
-        get("shipping").innerText = "Shipping: $0.00";
-    }
-    else {
-        get("shipping").innerText = "Enter Valid Zipcode";
-    }
-}
-
-// <------Checkout page-------->
-
-get("estimate").addEventListener("click", shippingCharge)
-
-get("checkout").addEventListener("click", checkout)
-// document.getElementById("checkout").addEventListener("click", checkout)
-
-function checkout() {
-    // console.log("yes")
-    localStorage.setItem("CartTotal", JSON.stringify([total]));
-    window.location.href = "address.html"
-}
 

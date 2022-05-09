@@ -6,224 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      #main{
-          display: flex;
-          width: 30%;
-          gap: 5px;
-       }
-
-       #sidebar{
-          border: 1px solid;
-       }
-       #container{
-          display: grid;
-          grid-template-columns: repeat(3,1fr);
-          gap: 20px;
-          width: 70%;
-          margin-left: 310px;
-       }
-
-       #container>div{
-         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-        /* padding:15px; */
-        /* height: 600px; */
-        line-height: 19px;
-        width: 390px;
-       }
-       #div1{
-           display: flex;
-           gap: 25px;
-           margin-top: -20px;
-           
-       }
-      #strick{
-        text-decoration: line-through;
-       }
-       #p4{
-         margin-top: -10px;
-         margin-left: 20px;
-       }
-
-       #div2{
-       display: flex;
-       margin-left: 20px;
-       
-      }
-       #p21{
-          /* margin-left: -55px; */
-          margin-top: -1px;
-          font-weight: bold;
-          font-size: 20px
-       }
-      
-      #price{
-         font-weight: bold;
-         font-size: 20px
-      }
-      #free{
-         color: rgb(27, 199, 226);
-         margin-left: 20px;
-      }
-      img{
-         height: 300px;
-         width: 350px;
-        
-         }
-         #div3{
-           display: flex;
-         }
-       #btn1{
-          width: 380px;
-          padding: 10px;
-          background-color: #F0F1F7;
-          /* color: white; */
-          font-size: 16px;
-          border: 1px solid rgb(205, 201, 201);
-          font-weight: bold;
-       }
-       #btn2{
-          width: 380px;
-          padding: 10px;
-          background-color: #414467;
-          color: white;
-          font-size: 16px;
-          font-weight: bold;
-          border: 1px solid rgb(205, 201, 201);
-       }
-       #title{
-         margin-left: 20px;
-         font-size: 17px;
-         color: #2E2C38;
-       }
-       #title:hover{
-        color: #509bc1;
-        cursor: pointer;
-       }
-       #soldBy{
-         margin-left: 20px;
-       }
-
-         /* -------------sidenav----------------------- */
-
-      #toplabel{
-         font-size: 20px;
-         font-weight: bold;
-         color: #55a1c5;
-         margin-bottom: -50px;
-      }
-
-      span{
-         font-size: 13px;
-         color: #929194;
-      }
-
-      #topcheck{
-         margin-left: 35px;
-         margin-bottom: 15px;
-      }
-
-      label{
-         font-size: 13px;
-        
-       }
-      input{
-         margin-left: 20px;
-         height: 20px;
-         width: 20px;
-       
-      }
-     
-     #checkbox{
-        margin-bottom: 20px;
-        border-top: 1px solid rgb(206, 201, 201);
-        border-bottom: 1px solid rgb(226, 221, 221);
-        padding: 15px;
-     }
-
-
-
-      body {
-  font-family: "Lato", sans-serif;
-
-      }
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 281px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  
-  overflow-x: hidden;
-  padding-top: 20px;
-  border: 0.2px solid rgb(199, 196, 196);
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
- 
-  text-decoration: none;
-  font-size: 16px;
-  /* color: #818181; */
-  color: #202340;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  line-height: 15px;
- 
-}
-
-.sidenav a{
-  font-size: 13px;
-  margin-left: 20px;
-}
-
-
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #509bc1;
-}
-
-
-.main {
-  margin-left: 150px; 
-  font-size: 16px; 
-  padding: 0px 10px;
-}
-
-
-
-.dropdown-container {
-  display: none;
-  
-  padding-left: 8px;
-}
-
-
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-       
-   </style>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="../Styles/products.css">
+   
 </head>
 <body>
+  <div id="mySidenav" class="sidenav"> </div>
+  <!-- ---------------navbar----------------- -->
+  <div id="navbar"></div>
+  <!-- ----------middle part----------- -->
    <div id="main">
 
-      <div class="sidenav">
+    <div id="sidenavv">
 
          <input id="topcheck" type="checkbox">
          <label id="toplabel" for="">OneCart <span>(189,680)</span></label>
@@ -396,73 +192,75 @@
       <div id="container"></div>
 
     </div>
+     <!-- --------footer-------------- -->
+  <div id="footer"></div>
 </body>
 </html>
 
-<script>
+<script type="module">
 
 let kids=[
         {
-           image:"https://img.shop.com/Image/260000/263300/263359/products/1634776773.jpg?size=400x400" ,
-           title:"Swea Pea & Lilli Baby Girls Ivory Lilac Satin Organza Flower Girl Dress 3-24M",
+          product_img_src:"https://img.shop.com/Image/260000/263300/263359/products/1634776773.jpg?size=400x400" ,
+          product_name:"Swea Pea & Lilli Baby Girls Ivory Lilac Satin Organza Flower Girl Dress 3-24M",
            soldBy:"Sold by Sophia's Style",
-           price:52,
+           product_price:52,
            strikedOffPrice:"$69.99",
            Cashback:"+ up to $1.41 / 6% Cashback",
            free:"Free shipping",
         },
         {
-           image:"https://img.shop.com/Image/260000/266700/266752/products/1923645513.jpg?size=400x400" ,
-           title:"Koala Kids Baby Girls Happy Easter Tutu Glitter",
+          product_img_src:"https://img.shop.com/Image/260000/266700/266752/products/1923645513.jpg?size=400x400" ,
+          product_name:"Koala Kids Baby Girls Happy Easter Tutu Glitter",
            soldBy:"Sold by Authentic Designer Fashion",
-           price:16.99,
+           product_price:16.99,
            strikedOffPrice:"$29.00",
            Cashback:"+  $1.14 / 3% Cashback",
            free:"Free shipping",
         },
         {
-           image:"https://img.shop.com/Image/280000/288000/288080/products/1892927812.jpg?size=400x400" ,
-           title:"Dino Fun - Baby Kids FeatherSoft Leggings",
+          product_img_src:"https://img.shop.com/Image/280000/288000/288080/products/1892927812.jpg?size=400x400" ,
+          product_name:"Dino Fun - Baby Kids FeatherSoft Leggings",
            soldBy:"Sold by NotJustLeggings",
-           price:17.50,
+           product_price:17.50,
            strikedOffPrice:"$28.00",
            Cashback:"+ $1.40 / 8% Cashback",
            free:"Free shipping",
         },
 
         {
-           image:"https://img.shop.com/Image/240000/243500/243545/products/1910442884.jpg?size=400x400" ,
-           title:"Burt's Bees Baby Size 6-9M 2-Piece Vintage Snowflake Tunic And Legging Set In Grey/white",
+          product_img_src:"https://img.shop.com/Image/240000/243500/243545/products/1910442884.jpg?size=400x400" ,
+          product_name:"Burt's Bees Baby Size 6-9M 2-Piece Vintage Snowflake Tunic And Legging Set In Grey/white",
            soldBy:"Sold by Bed Bath & Beyond",
-           price:7.29,
+           product_price:7.29,
            strikedOffPrice:"$9.50",
            Cashback:"+   up to $1.39 / 2% Cashback",
            free:"Free shipping",
         },
         {
-           image:"https://img.shop.com/Image/240000/243500/243545/products/1908177435.jpg?size=400x400" ,
-           title:"Carhartt Infant Canvas Cap In Pink",
+          product_img_src:"https://img.shop.com/Image/240000/243500/243545/products/1908177435.jpg?size=400x400" ,
+          product_name:"Carhartt Infant Canvas Cap In Pink",
            soldBy:"Sold by Bed Bath & Beyond",
-           price:12,
+           product_price:12,
            strikedOffPrice:"$14.00",
            Cashback:"+ $3.12 / 6% Cashback",
            free:"Free shipping",
         },
 
         {
-           image:"https://img.shop.com/Image/260000/263300/263359/products/1914876866.jpg?size=400x400" ,
-           title:"Bonnie Jean Baby Girls Red Flocked Matte Satin Pleated Christmas Dress 0-9M",
+          product_img_src:"https://img.shop.com/Image/260000/263300/263359/products/1914876866.jpg?size=400x400" ,
+          product_name:"Bonnie Jean Baby Girls Red Flocked Matte Satin Pleated Christmas Dress 0-9M",
            soldBy:"Sold by Sophia's Style",
-           price:41.59,
+           product_price:41.59,
            strikedOffPrice:"$319.00",
            Cashback:"+ $0.83 / 2% Cashback",
            free:"Free shipping",
         },
         {
-           image:"https://img.shop.com/Image/260000/268500/268595/products/1907286590.jpg?size=400x400" ,
-           title:"Boys 4-12 Jammies For Your Families Star Wars The Mandalorian The Child aka Baby Yoda Pajama Set, Boy's, Multicolor",
+          product_img_src:"https://img.shop.com/Image/260000/268500/268595/products/1907286590.jpg?size=400x400" ,
+          product_name:"Boys 4-12 Jammies For Your Families Star Wars The Mandalorian The Child aka Baby Yoda Pajama Set, Boy's, Multicolor",
            soldBy:"Sold by Kohl's",
-           price:11.40,
+           product_price:11.40,
            strikedOffPrice:"$19.00",
            Cashback:"+  $2.82 / 3% Cashback",
            free:"Free shipping",
@@ -471,7 +269,21 @@ let kids=[
     ]
 
 
-    let SeeDetailsArr=JSON.parse(localStorage.getItem("SeeDetails"))  || [] 
+
+
+    import { navbar, sidenav } from "../components/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar()
+  document.getElementById("mySidenav").innerHTML = sidenav()
+
+
+  import { footer } from "../components/footer.js"
+  document.getElementById("footer").innerHTML = footer()
+
+
+
+
+
+    let SeeDetailsArr=[] 
 
 
     kids.map((el)=>{
@@ -479,10 +291,10 @@ let kids=[
 let div=document.createElement("div")
 
 let image=document.createElement("img")
-image.src=el.image
+image.src=el.product_img_src
 
 let h2=document.createElement("p")
-h2.innerHTML=el.title
+h2.innerHTML=el.product_name
 h2.setAttribute("id","title")
 
 let p1=document.createElement("p")
@@ -498,7 +310,7 @@ div2.setAttribute("id","div2")
 
 
 let p2=document.createElement("p")
-p2.innerHTML=el.price
+p2.innerHTML=el.product_price
 p2.setAttribute("id","price")
 
 let p21=document.createElement("p")
@@ -553,7 +365,7 @@ let btn1=document.createElement("button")
 let SeeDetails=(el)=>{
     SeeDetailsArr.push(el)
     localStorage.setItem("SeeDetails",JSON.stringify(SeeDetailsArr))
-    window.location.href="../HTML pages/ProductDetails.html"
+    window.location.href="productDetails.html"
 }
 
 // ------------------------sidenav-----------------
@@ -572,4 +384,51 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+
+
+
+
+/*-------------------navbar js-----------------------*/
+
+
+
+document.getElementById("open").addEventListener("click", openNav)
+  document.getElementById("close").addEventListener("click", closeNav)
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "25vw";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  //  ----------for menu button, end-------- 
+
+
+  // -----------search function start----------
+
+  document.getElementById("i").addEventListener("click", search)
+
+
+  function search() {
+    let q = document.getElementById("q").value
+    window.location.href = `${q}.html`
+  }
+
+
+  document.getElementById("q").addEventListener("keydown", serchenter)
+
+  function serchenter(e) {
+    if (e.key == "Enter") {
+      let q = document.getElementById("q").value
+      window.location.href = `${q}.html`
+    }
+  }
+// -----------search function end----------
+
+
+
+
+
 </script>

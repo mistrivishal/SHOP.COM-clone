@@ -1,4 +1,4 @@
-import { navbar2 } from "../checkout/navbar2.js";
+import { navbar2 } from "../components/navbar2.js";
 document.getElementById("navbar2").innerHTML=navbar2();
 
 document.getElementById("save").addEventListener('click',save);
@@ -25,4 +25,5 @@ function save(){
     
     localStorage.setItem('details',JSON.stringify(details));
     console.log(details);
+    window.location.href="./address.html"
 }

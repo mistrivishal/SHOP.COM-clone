@@ -11,6 +11,7 @@
     box-shadow: 0 0 8px #202340;
     padding: 5px 10px;
     height: 60px;
+    z-index: 10;
 }
 #shop_logo{
     height:50px;
