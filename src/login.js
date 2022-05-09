@@ -81,6 +81,7 @@ document.getElementById("shop_login_form").addEventListener("submit", function (
                         // Data saved successfully!
                         console.log("created")
                         alert("Logged in successfully")
+                        window.location.href = "/index.html"
                     })
                     .catch((error) => {
                         // The write failed...

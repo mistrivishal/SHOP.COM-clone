@@ -47,6 +47,7 @@ document.getElementById("signup_form").addEventListener("submit", function (even
                     // Data saved successfully!
                     console.log("created")
                     alert("account created successfully")
+                    window.location.href = "./login.html"
                 })
                 .catch((error) => {
                     // The write failed...
