@@ -534,6 +534,19 @@ body {
     width: 100%;
 }
 
+#cartLength{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    right: 1%;
+    top: -3%;
+    padding: 1px 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0.5px dotted;
+    background: #fff;
+    box-sizing: border-box;
+}
 /* ----------for menu button, start-------- */
 
 .sidenav {

@@ -68,7 +68,7 @@ cart.forEach((elem, idx) => {
 
     cart_product_img.classList.add("cart-product-img");
     let product_img = create("img");
-    product_img.src = `${elem.product_image_src}`;
+    product_img.src = `${elem.product_img_src}`;
 
     cart_product_img.append(product_img);
 
@@ -132,7 +132,9 @@ function removeItem(elem, idx) {
     localStorage.setItem("myCart", JSON.stringify(cart))
     window.location.reload()
 }
-let total = JSON.parse(localStorage.getItem("CartTotal"));
+var total = cart.reduce(function (sum, elem) {
+    return sum + +(elem.product_price.split('$').join('').split("-").pop())
+}, 0)
 document.getElementById("total-price").innerText = "$" + total;
 // let total=JSON.parse(localStorage.getItem("CartTotal"));
 document.getElementById('line1b').innerText = "Order total:$" + total;
