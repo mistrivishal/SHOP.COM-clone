@@ -1,9 +1,9 @@
 # SHOP.COM-clone
 👋 Hello Everyone..!!
-In Masai School Unit-3 construct week project.
-we are alloted to Build Clone Of E-commerce Site Shop.com.
-We are students of the Masai School Web-17 batch. Currently, we are all in unit 3. In the Masai School, at the end of every unit, the last week is called construct week. In which every student of Masai School has to build a project.
-On 2 nd may, we got the name of the members and the project. We have to build the clone of the Shop.com site. It is the most popular online shopping site.
+This is a project in Unit-3 of Masai School.
+As part of our work on the project, we are assigned to clone the e-commerce website Shop.com.
+We are Masai School Web-17 students. We are currently in unit 3. Construct week is an integral part of every unit at Masai School. During this period, every student at Masai School builds a project.
+As of May 2nd, we were informed of the names of the members and the project. Our task is to build a clone of Shop.com. A popular online shopping site.
 
 👉 Links of the clone Shop.com site project :-
 
